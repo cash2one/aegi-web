@@ -98,24 +98,21 @@
 }
 
 .footer-distributed .footer-right i{
-	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 120%;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 35px;
+	line-height: 30px;
 	margin: 5px;
 	vertical-align: middle;
 }
-
 .footer-distributed .footer-right p{
 	display: inline-block;
 	vertical-align: middle;
 	margin:0;
 }
-
 .footer-distributed .footer-right p a{
 	color:  white;
 	color: #999e9e;
@@ -163,6 +160,12 @@
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+.footer-distributed .footer-icons a:nth-child(1){background-color:green;}
+.footer-distributed .footer-icons a:nth-child(2){background-color:rgb(214,0,127);}
+.footer-distributed .footer-icons a:nth-child(3){background-color:rgb(0,158,230);}
+.footer-distributed .footer-icons a:nth-child(4){background-color:blue;}
+.footer-distributed .footer-right i:nth-child(1){background:rgb(174,208,61);}
+
 
 
 .footer-distributed .copyright{
@@ -197,6 +200,7 @@
 
 	.footer-distributed .footer-right i{
 		margin-left: 0;
+
 	}
 
 }

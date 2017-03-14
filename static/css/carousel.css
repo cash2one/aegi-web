@@ -18,18 +18,12 @@
 }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 600px;
+/*.carousel .item {
+    height: 0%;
     background-color: white;
-}
-
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-}
-
+}*/
+.carousel .item img {width: 100%;}
+.carousel-inner {position: relative;overflow: hidden;width: 100%;}
 .carousel-indicators li {
     background-color: white;
     margin-left: 15px;
@@ -59,8 +53,5 @@
     }
 }
 
-@media (min-width: 992px) {
-    .featurette-heading {
-        margin-top: 120px;
-    }
+@media (min-width: 992px) {.featurette-heading { margin-top: 120px;}
 }

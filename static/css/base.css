@@ -42,7 +42,6 @@ img#logo {
 .login div {
     padding: 6px 20px;
     margin-top: 10px;
-    background-color: #2986E2;
     background-color: #1BA8B7;
     border-radius: 5px;
     color: white;
@@ -53,21 +52,33 @@ img#logo {
     text-decoration: none;
 }
 
-.login div a:hover {
-    color: #e1e1e1;
+.login div a:hover{
+    color: #dddddd;
+    text-decoration: none;
 }
 
 #navbar {
     margin-top: 15px;
 }
 
-#navbar a:hover {
+#mainnav a:hover {
     color: #1BA8B7;
+}
+
+#mainnav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
 }
 
 .navbar-right {
     margin-right: 0px;
 }
+
+.navbar-right a:hover{
+    color: red;
+}
+/*.navbar-right a:hover{color: red;}*/
 
 #mainnav {
     margin-left: 50px;
@@ -77,9 +88,3 @@ img#logo {
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
-
-
-
-
