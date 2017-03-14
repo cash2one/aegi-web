@@ -160,11 +160,11 @@
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-.footer-distributed .footer-icons a:nth-child(1){background-color:green;}
-.footer-distributed .footer-icons a:nth-child(2){background-color:rgb(214,0,127);}
-.footer-distributed .footer-icons a:nth-child(3){background-color:rgb(0,158,230);}
-.footer-distributed .footer-icons a:nth-child(4){background-color:blue;}
-.footer-distributed .footer-right i:nth-child(1){background:rgb(174,208,61);}
+.footer-distributed .footer-icons a:nth-child(1){background-color:#05af10;}
+.footer-distributed .footer-icons a:nth-child(2){background-color:#ea0b18;}
+.footer-distributed .footer-icons a:nth-child(3){background-color:#3a5898;}
+.footer-distributed .footer-icons a:nth-child(4){background-color:#006a9a;}
+.footer-distributed .footer-right i{background:grey;}
 
 
 
