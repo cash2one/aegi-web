@@ -80,7 +80,7 @@ Description: for team page
 }
 
 .profile__portrait {
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
     height: 200px;
     background-repeat: no-repeat;
     background-position: center top;
@@ -94,15 +94,15 @@ Description: for team page
 }
 
 .profile--liyang__portrait {
-    background-image: url("/static/img/figure.png")
+    background-image: url("/static/img/liyang.png")
 }
 
 .profile--liuyang__portrait {
-    background-image: url("/static/img/figure.png")
+    background-image: url("/static/img/liuyang.png")
 }
 
 .profile--lvpeitao__portrait {
-    background-image: url("/static/img/figure.png")
+    background-image: url("/static/img/lvpeitao.png")
 }
 
 .profile--zhangyang__portrait {
@@ -349,6 +349,10 @@ Description: for team page
 
 .collaborator--zhuhuaiqiu .collaborator__image {
     background-image: url("/static/img/zhuhuaiqiu.jpg");
+}
+
+.collaborator--majingdong .collaborator__image{
+    background-image: url("/static/img/majingdong.png");
 }
 
 .collaborator__image {

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-filebrowser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-30 18:48+0100\n"
+"POT-Creation-Date: 2017-03-15 09:50+0000\n"
 "PO-Revision-Date: 2011-06-01 15:23+0000\n"
 "Last-Translator: sehmaschine <patrick@vonautomatisch.at>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,172 +16,160 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: actions.py:53
+#: filebrowser/actions.py:49
 #, python-format
 msgid "Action applied successfully to '%s'"
 msgstr ""
 
-#: actions.py:59 forms.py:20
+#: filebrowser/actions.py:55 filebrowser/forms.py:17
 msgid "Flip horizontal"
 msgstr ""
 
-#: actions.py:66 forms.py:21
+#: filebrowser/actions.py:62 filebrowser/forms.py:18
 msgid "Flip vertical"
 msgstr ""
 
-#: actions.py:73 forms.py:22
+#: filebrowser/actions.py:69 filebrowser/forms.py:19
 msgid "Rotate 90° CW"
 msgstr ""
 
-#: actions.py:80 forms.py:23
+#: filebrowser/actions.py:76 filebrowser/forms.py:20
 msgid "Rotate 90° CCW"
 msgstr ""
 
-#: actions.py:87 forms.py:24
+#: filebrowser/actions.py:83 filebrowser/forms.py:21
 msgid "Rotate 180°"
 msgstr ""
 
-#: decorators.py:39
+#: filebrowser/decorators.py:37
 #, fuzzy
 msgid ""
 "Error finding Upload-Folder (site.storage.location + site.directory). Maybe "
 "it does not exist?"
 msgstr ""
-"Error finding Upload-Folder (site.storage.location + site.directory). Maybe it does not "
-"exist?"
+"Error finding Upload-Folder (site.storage.location + site.directory). Maybe "
+"it does not exist?"
 
-#: decorators.py:41
+#: filebrowser/decorators.py:39
 msgid "The requested Folder does not exist."
 msgstr "The requested Folder does not exist."
 
-#: decorators.py:55
+#: filebrowser/decorators.py:53
 msgid "The requested File does not exist."
 msgstr "The requested File does not exist."
 
-#: decorators.py:61
-msgid "You do not have permission to access this file!"
-msgstr ""
-
-#: fields.py:63
+#: filebrowser/fields.py:60 filebrowser/fields.py:181
 #, python-format
 msgid "Extension %(ext)s is not allowed. Only %(allowed)s is allowed."
 msgstr "Extension %(ext)s is not allowed. Only %(allowed)s is allowed."
 
-#: forms.py:57 forms.py:82
+#: filebrowser/forms.py:30 filebrowser/forms.py:55
 msgid "Name"
 msgstr "Name"
 
-#: forms.py:57 forms.py:69 forms.py:82 forms.py:101
+#: filebrowser/forms.py:30 filebrowser/forms.py:42 filebrowser/forms.py:55
+#: filebrowser/forms.py:74
 msgid "Only letters, numbers, underscores, spaces and hyphens are allowed."
 msgstr "Only letters, numbers, underscores, spaces and hyphens are allowed."
 
-#: forms.py:72 forms.py:104
+#: filebrowser/forms.py:45 filebrowser/forms.py:77
 msgid "The Folder already exists."
 msgstr "The Folder already exists."
 
-#: forms.py:81
+#: filebrowser/forms.py:54
 msgid "Actions"
 msgstr ""
 
-#: forms.py:106
+#: filebrowser/forms.py:79
 msgid "The File already exists."
 msgstr "The File already exists."
 
-#: settings.py:110 templates/filebrowser/include/tableheader.html:21
-#: templates/filebrowser/include/tableheader.html:22
+#: filebrowser/settings.py:112
+#: filebrowser/templates/filebrowser/include/filter.html:24
+#: filebrowser/templates/filebrowser/include/tableheader.html:21
+#: filebrowser/templates/filebrowser/include/tableheader.html:22
 msgid "Folder"
 msgstr "Folder"
 
-#: settings.py:111
+#: filebrowser/settings.py:113
 msgid "Image"
 msgstr "Image"
 
-#: settings.py:112
+#: filebrowser/settings.py:114
 msgid "Video"
 msgstr "Video"
 
-#: settings.py:113
+#: filebrowser/settings.py:115
 msgid "Document"
 msgstr "Document"
 
-#: settings.py:114
+#: filebrowser/settings.py:116
 msgid "Audio"
 msgstr "Audio"
 
-#: sites.py:348 templates/filebrowser/include/breadcrumbs.html:9
-#: templates/filebrowser/include/breadcrumbs.html:11
+#: filebrowser/sites.py:340
+#: filebrowser/templates/filebrowser/include/breadcrumbs.html:8
+#: filebrowser/templates/filebrowser/include/breadcrumbs.html:10
 msgid "FileBrowser"
 msgstr "FileBrowser"
 
-#: sites.py:369
+#: filebrowser/sites.py:361
 #, python-format
 msgid "The Folder %s was successfully created."
 msgstr "The Folder %s was successfully created."
 
-#: sites.py:374
+#: filebrowser/sites.py:367
 msgid "Permission denied."
 msgstr "Permission denied."
 
-#: sites.py:376
+#: filebrowser/sites.py:369
 msgid "Error creating folder."
 msgstr "Error creating folder."
 
-#: sites.py:383 sites.py:386 templates/filebrowser/index.html:80
+#: filebrowser/sites.py:377 filebrowser/sites.py:380
+#: filebrowser/templates/filebrowser/index.html:79
 msgid "New Folder"
 msgstr "New Folder"
 
-#: sites.py:396
+#: filebrowser/sites.py:391
 msgid "Select files to upload"
 msgstr "Select files to upload"
 
-#: sites.py:399 templates/filebrowser/index.html:81
+#: filebrowser/sites.py:394 filebrowser/templates/filebrowser/index.html:80
 msgid "Upload"
 msgstr "Upload"
 
-#: sites.py:429 sites.py:432
+#: filebrowser/sites.py:425 filebrowser/sites.py:428
 msgid "Confirm delete"
 msgstr "Confirm delete"
 
-#: sites.py:448
+#: filebrowser/sites.py:444
 #, python-format
 msgid "Successfully deleted %s"
 msgstr "Successfully deleted %s"
 
-#: sites.py:485
+#: filebrowser/sites.py:481
 msgid "Renaming was successful."
 msgstr "Renaming was successful."
 
-#: sites.py:494
+#: filebrowser/sites.py:490
 msgid "Error."
 msgstr "Error."
 
-#: widgets.py:17 widgets.py:50
-msgid "Currently"
-msgstr "Currently"
-
-#: widgets.py:18 widgets.py:51
-#: templates/filebrowser/include/filelisting.html:131
-msgid "Change"
-msgstr "Change"
-
-#: widgets.py:19 widgets.py:52
-msgid "Clear"
-msgstr "Clear"
-
-#: templates/filebrowser/createdir.html:23
-#: templates/filebrowser/detail.html:48
+#: filebrowser/templates/filebrowser/createdir.html:23
+#: filebrowser/templates/filebrowser/detail.html:51
 msgid "Please correct the following errors."
 msgstr "Please correct the following errors."
 
-#: templates/filebrowser/createdir.html:36
-#: templates/filebrowser/upload.html:147
+#: filebrowser/templates/filebrowser/createdir.html:36
+#: filebrowser/templates/filebrowser/upload.html:148
 msgid ""
 "The Name will be normalized by converting or stripping all non-standard "
 "characters."
 msgstr ""
 
-#: templates/filebrowser/createdir.html:39
-#: templates/filebrowser/upload.html:150
+#: filebrowser/templates/filebrowser/createdir.html:39
+#: filebrowser/templates/filebrowser/upload.html:151
 msgid ""
 "The Name will be converted to lowercase. Spaces will be replaced with "
 "underscores."
@@ -189,244 +177,259 @@ msgstr ""
 "The Name will be converted to lowercase. Spaces will be replaced with "
 "underscores."
 
-#: templates/filebrowser/createdir.html:50
+#: filebrowser/templates/filebrowser/createdir.html:50
 msgid "Submit"
 msgstr "Submit"
 
-#: templates/filebrowser/custom_field.html:26
-#: templates/filebrowser/widgets/clearablefileinput.html:11
-#: templates/filebrowser/widgets/fileinput.html:11
+#: filebrowser/templates/filebrowser/custom_field.html:26
+#: filebrowser/templates/filebrowser/custom_upload_field.html:6
 msgid "File not found"
 msgstr "File not found"
 
-#: templates/filebrowser/delete_confirm.html:30
-#, python-format
-msgid ""
-"Are you sure you want to delete \"%(escaped_object)s\"? All of the following "
-"items will be deleted:"
-msgstr ""
-"Are you sure you want to delete \"%(escaped_object)s\"? All of the following "
-"items will be deleted:"
-
-#: templates/filebrowser/delete_confirm.html:43
-#, python-format
-msgid "... and %(escaped_object)s more Files."
-msgstr "... and %(escaped_object)s more Files."
-
-#: templates/filebrowser/delete_confirm.html:50
-#: templates/filebrowser/upload.html:51
-msgid "Cancel"
-msgstr "Cancel"
-
-#: templates/filebrowser/delete_confirm.html:51
-msgid "Yes, I'm sure"
-msgstr "Yes, I'm sure"
-
-#: templates/filebrowser/detail.html:63
-msgid "Edit"
-msgstr "Edit"
-
-#: templates/filebrowser/detail.html:78
-msgid "Folder Information"
-msgstr "Folder Information"
-
-#: templates/filebrowser/detail.html:81 templates/filebrowser/detail.html:116
-#: templates/filebrowser/include/tableheader.html:28
-#: templates/filebrowser/include/tableheader.html:29
-msgid "Date"
-msgstr "Date"
-
-#: templates/filebrowser/detail.html:93
-msgid "File Information"
-msgstr "File Information"
-
-#: templates/filebrowser/detail.html:96
-msgid "URL"
-msgstr "URL"
-
-#: templates/filebrowser/detail.html:106
-msgid "Filesize"
-msgstr "Filesize"
-
-#: templates/filebrowser/detail.html:127
-#: templates/filebrowser/include/tableheader.html:25
-#: templates/filebrowser/include/tableheader.html:26
-msgid "Size"
-msgstr "Size"
-
-#: templates/filebrowser/detail.html:140
-msgid "Image Versions"
-msgstr "Image Versions"
-
-#: templates/filebrowser/detail.html:144
-#: templates/filebrowser/include/tableheader.html:15
-msgid "Thumbnail"
-msgstr "Thumbnail"
-
-#: templates/filebrowser/detail.html:146
-#: templates/filebrowser/include/filelisting.html:101
-msgid "View Image"
-msgstr "View Image"
-
-#: templates/filebrowser/detail.html:170
-msgid "Delete"
-msgstr "Delete"
-
-#: templates/filebrowser/detail.html:171
-msgid "Save"
-msgstr "Save"
-
-#: templates/filebrowser/detail.html:172
-msgid "Save and continue editing"
-msgstr "Save and continue editing"
-
-#: templates/filebrowser/upload.html:42
-#, fuzzy
-msgid "Drop files here to upload"
-msgstr "Select files to upload"
-
-#: templates/filebrowser/upload.html:43
+#: filebrowser/templates/filebrowser/custom_upload_field.html:41
+#: filebrowser/templates/filebrowser/upload.html:42
 #, fuzzy
 msgid "Upload a file"
 msgstr "Upload"
 
-#: templates/filebrowser/upload.html:52
-#, fuzzy
-msgid "Failed"
-msgstr "Failed"
-
-#: templates/filebrowser/upload.html:66
-msgid "{file} has invalid extension. Only {extensions} are allowed."
-msgstr ""
-
-#: templates/filebrowser/upload.html:67
-msgid "{file} is too large, maximum file size is {sizeLimit}."
-msgstr ""
-
-#: templates/filebrowser/upload.html:68
-msgid "{file} is too small, minimum file size is {minSizeLimit}."
-msgstr ""
-
-#: templates/filebrowser/upload.html:69
-msgid "{file} is empty, please select files again without it."
-msgstr ""
-
-#: templates/filebrowser/upload.html:70
+#: filebrowser/templates/filebrowser/delete_confirm.html:29
+#, python-format
 msgid ""
-"The files are being uploaded, if you leave now the upload will be cancelled."
+"Are you sure you want to delete \"%(escaped_object)s\"? All of the following "
+"items will be deleted:"
 msgstr ""
+"Are you sure you want to delete \"%(escaped_object)s\"? All of the following "
+"items will be deleted:"
 
-#: templates/filebrowser/upload.html:115
-msgid "Please enable Javascript to upload files."
-msgstr ""
+#: filebrowser/templates/filebrowser/delete_confirm.html:42
+#, python-format
+msgid "... and %(escaped_object)s more Files."
+msgstr "... and %(escaped_object)s more Files."
 
-#: templates/filebrowser/upload.html:120
-msgid "Help"
-msgstr "Help"
+#: filebrowser/templates/filebrowser/delete_confirm.html:49
+#: filebrowser/templates/filebrowser/upload.html:50
+msgid "Cancel"
+msgstr "Cancel"
 
-#: templates/filebrowser/upload.html:123
-msgid "Allowed"
-msgstr "Allowed"
+#: filebrowser/templates/filebrowser/delete_confirm.html:50
+msgid "Yes, I'm sure"
+msgstr "Yes, I'm sure"
 
-#: templates/filebrowser/upload.html:137
-msgid "Max. Filesize"
-msgstr "Max. Filesize"
+#: filebrowser/templates/filebrowser/detail.html:65
+msgid "Edit"
+msgstr "Edit"
 
-#: templates/filebrowser/upload.html:144
-#: templates/filebrowser/include/tableheader.html:17
-#: templates/filebrowser/include/tableheader.html:18
-msgid "Filename"
-msgstr "Filename"
+#: filebrowser/templates/filebrowser/detail.html:79
+msgid "Folder Information"
+msgstr "Folder Information"
 
-#: templates/filebrowser/include/breadcrumbs.html:6
+#: filebrowser/templates/filebrowser/detail.html:82
+#: filebrowser/templates/filebrowser/detail.html:117
+#: filebrowser/templates/filebrowser/include/tableheader.html:28
+#: filebrowser/templates/filebrowser/include/tableheader.html:29
+msgid "Date"
+msgstr "Date"
+
+#: filebrowser/templates/filebrowser/detail.html:94
+msgid "File Information"
+msgstr "File Information"
+
+#: filebrowser/templates/filebrowser/detail.html:97
+msgid "URL"
+msgstr "URL"
+
+#: filebrowser/templates/filebrowser/detail.html:107
+msgid "Filesize"
+msgstr "Filesize"
+
+#: filebrowser/templates/filebrowser/detail.html:128
+#: filebrowser/templates/filebrowser/include/tableheader.html:25
+#: filebrowser/templates/filebrowser/include/tableheader.html:26
+msgid "Size"
+msgstr "Size"
+
+#: filebrowser/templates/filebrowser/detail.html:141
+msgid "Image Versions"
+msgstr "Image Versions"
+
+#: filebrowser/templates/filebrowser/detail.html:145
+#: filebrowser/templates/filebrowser/include/tableheader.html:15
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: filebrowser/templates/filebrowser/detail.html:147
+#: filebrowser/templates/filebrowser/include/filelisting.html:100
+msgid "View Image"
+msgstr "View Image"
+
+#: filebrowser/templates/filebrowser/detail.html:171
+msgid "Delete"
+msgstr "Delete"
+
+#: filebrowser/templates/filebrowser/detail.html:172
+msgid "Save"
+msgstr "Save"
+
+#: filebrowser/templates/filebrowser/detail.html:173
+msgid "Save and continue editing"
+msgstr "Save and continue editing"
+
+#: filebrowser/templates/filebrowser/include/breadcrumbs.html:5
 msgid "Home"
 msgstr "Home"
 
-#: templates/filebrowser/include/filelisting.html:19
-#: templates/filebrowser/include/filelisting.html:45
-#: templates/filebrowser/include/filelisting.html:70
+#: filebrowser/templates/filebrowser/include/filelisting.html:18
+#: filebrowser/templates/filebrowser/include/filelisting.html:44
+#: filebrowser/templates/filebrowser/include/filelisting.html:69
 msgid "Select"
 msgstr "Select"
 
-#: templates/filebrowser/include/filelisting.html:23
-#: templates/filebrowser/include/filelisting.html:49
-#: templates/filebrowser/include/filelisting.html:74
+#: filebrowser/templates/filebrowser/include/filelisting.html:22
+#: filebrowser/templates/filebrowser/include/filelisting.html:48
+#: filebrowser/templates/filebrowser/include/filelisting.html:73
 msgid "Versions"
 msgstr "Versions"
 
-#: templates/filebrowser/include/filter.html:5
+#: filebrowser/templates/filebrowser/include/filelisting.html:130
+msgid "Change"
+msgstr "Change"
+
+#: filebrowser/templates/filebrowser/include/filter.html:5
 msgid "Filter"
 msgstr "Filter"
 
-#: templates/filebrowser/include/filter.html:9
+#: filebrowser/templates/filebrowser/include/filter.html:9
 msgid "By Date"
 msgstr "By Date"
 
-#: templates/filebrowser/include/filter.html:11
+#: filebrowser/templates/filebrowser/include/filter.html:11
 msgid "Any Date"
 msgstr "Any Date"
 
-#: templates/filebrowser/include/filter.html:12
+#: filebrowser/templates/filebrowser/include/filter.html:12
 msgid "Today"
 msgstr "Today"
 
-#: templates/filebrowser/include/filter.html:13
+#: filebrowser/templates/filebrowser/include/filter.html:13
 msgid "Past 7 days"
 msgstr "Past 7 days"
 
-#: templates/filebrowser/include/filter.html:14
+#: filebrowser/templates/filebrowser/include/filter.html:14
 msgid "This Month"
 msgstr "This Month"
 
-#: templates/filebrowser/include/filter.html:15
+#: filebrowser/templates/filebrowser/include/filter.html:15
 msgid "This year"
 msgstr "This year"
 
-#: templates/filebrowser/include/filter.html:21
+#: filebrowser/templates/filebrowser/include/filter.html:21
 msgid "By Type"
 msgstr "By Type"
 
-#: templates/filebrowser/include/filter.html:23
+#: filebrowser/templates/filebrowser/include/filter.html:23
 msgid "All"
 msgstr "All"
 
-#: templates/filebrowser/include/paginator.html:6
+#: filebrowser/templates/filebrowser/include/paginator.html:6
 msgid "result"
 msgstr "result"
 
-#: templates/filebrowser/include/paginator.html:6
+#: filebrowser/templates/filebrowser/include/paginator.html:6
 msgid "results"
 msgstr "results"
 
-#: templates/filebrowser/include/paginator.html:10
-#: templates/filebrowser/include/paginator.html:12
+#: filebrowser/templates/filebrowser/include/paginator.html:10
+#: filebrowser/templates/filebrowser/include/paginator.html:12
 msgid "total"
 msgstr "total"
 
-#: templates/filebrowser/include/tableheader.html:12
-#: templates/filebrowser/include/tableheader.html:13
+#: filebrowser/templates/filebrowser/include/tableheader.html:12
+#: filebrowser/templates/filebrowser/include/tableheader.html:13
 msgid "Type"
 msgstr "Type"
 
-#: templates/filebrowser/include/toolbar.html:6
+#: filebrowser/templates/filebrowser/include/tableheader.html:17
+#: filebrowser/templates/filebrowser/include/tableheader.html:18
+#: filebrowser/templates/filebrowser/upload.html:145
+msgid "Filename"
+msgstr "Filename"
+
+#: filebrowser/templates/filebrowser/include/toolbar.html:6
 msgid "Results"
 msgstr "Results"
 
-#: templates/filebrowser/include/toolbar.html:8
+#: filebrowser/templates/filebrowser/include/toolbar.html:8
 #, python-format
 msgid "%(counter)s result"
 msgid_plural "%(counter)s results"
 msgstr[0] "%(counter)s result"
 msgstr[1] "%(counter)s results"
 
-#: templates/filebrowser/include/toolbar.html:9
+#: filebrowser/templates/filebrowser/include/toolbar.html:9
 #, python-format
 msgid "%(full_result_count)s total"
 msgstr "%(full_result_count)s total"
 
-#: templates/filebrowser/include/toolbar.html:16
+#: filebrowser/templates/filebrowser/include/toolbar.html:16
 msgid "Search"
 msgstr "Search"
+
+#: filebrowser/templates/filebrowser/upload.html:41
+#, fuzzy
+msgid "Drop files here to upload"
+msgstr "Select files to upload"
+
+#: filebrowser/templates/filebrowser/upload.html:51
+#, fuzzy
+msgid "Failed"
+msgstr "Failed"
+
+#: filebrowser/templates/filebrowser/upload.html:67
+#, python-brace-format
+msgid "{file} has invalid extension. Only {extensions} are allowed."
+msgstr ""
+
+#: filebrowser/templates/filebrowser/upload.html:68
+#, python-brace-format
+msgid "{file} is too large, maximum file size is {sizeLimit}."
+msgstr ""
+
+#: filebrowser/templates/filebrowser/upload.html:69
+#, python-brace-format
+msgid "{file} is too small, minimum file size is {minSizeLimit}."
+msgstr ""
+
+#: filebrowser/templates/filebrowser/upload.html:70
+#, python-brace-format
+msgid "{file} is empty, please select files again without it."
+msgstr ""
+
+#: filebrowser/templates/filebrowser/upload.html:71
+msgid ""
+"The files are being uploaded, if you leave now the upload will be cancelled."
+msgstr ""
+
+#: filebrowser/templates/filebrowser/upload.html:116
+msgid "Please enable Javascript to upload files."
+msgstr ""
+
+#: filebrowser/templates/filebrowser/upload.html:121
+msgid "Help"
+msgstr "Help"
+
+#: filebrowser/templates/filebrowser/upload.html:124
+msgid "Allowed"
+msgstr "Allowed"
+
+#: filebrowser/templates/filebrowser/upload.html:138
+msgid "Max. Filesize"
+msgstr "Max. Filesize"
+
+#~ msgid "Currently"
+#~ msgstr "Currently"
+
+#~ msgid "Clear"
+#~ msgstr "Clear"
 
 #~ msgid "BROWSE"
 #~ msgstr "BROWSE"

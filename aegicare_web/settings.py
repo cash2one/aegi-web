@@ -25,7 +25,7 @@ SECRET_KEY = 'fid6gqqw92yj-rh&2p1@47ee$i5t_6=ip30x2@%*q_!tq0*=ws'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.aegicare.com','54.254.151.249']
+ALLOWED_HOSTS = ['127.0.0.1', '.aegicare.com','54.254.151.249','119.23.47.227']
 
 
 # Application definition

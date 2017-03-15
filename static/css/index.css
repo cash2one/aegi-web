@@ -130,8 +130,10 @@ Description: for Aegicare home page
 /*about page*/
 
 #about #topimg {
-    height: 296px;
-    background: url(/static/img/about-us1.png) no-repeat center center;
+    width: 100%;
+    overflow: hidden;
+    height: 20em;
+
 }
 
 #about .aboutitem {

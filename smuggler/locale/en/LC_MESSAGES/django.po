@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django Smuggler\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-26 10:01+0200\n"
+"POT-Creation-Date: 2017-03-15 09:50+0000\n"
 "PO-Revision-Date: 2012-01-31 09:57-0200\n"
 "Last-Translator: Guilherme Gondim <semente+smuggler@taurinus.org>\n"
 "Language-Team: English (http://www.transifex.net/projects/p/django-smuggler/"
@@ -16,85 +16,93 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: forms.py:48
+#: smuggler/forms.py:45
 #, python-format
 msgid "Invalid file extension: .%(extension)s."
 msgstr ""
 
-#: forms.py:106
+#: smuggler/forms.py:52
+msgid "files"
+msgstr ""
+
+#: smuggler/forms.py:66 smuggler/views.py:150
 msgid "Upload"
 msgstr ""
 
-#: forms.py:114
+#: smuggler/forms.py:74
 msgid "Save in fixture directory"
 msgstr ""
 
-#: forms.py:117
+#: smuggler/forms.py:77
 #, python-format
 msgid "Uploads will be saved to \"%(fixture_dir)s\"."
 msgstr ""
 
-#: forms.py:123
+#: smuggler/forms.py:83 smuggler/views.py:151
 msgid "From fixture directory"
 msgstr ""
 
-#: forms.py:126
+#: smuggler/forms.py:86
 #, python-format
 msgid "Data files from \"%(fixture_dir)s\"."
 msgstr ""
 
-#: forms.py:140
+#: smuggler/forms.py:100
 msgid "At least one fixture file needs to be uploaded or selected."
 msgstr ""
 
-#: views.py:43
+#: smuggler/templates/smuggler/change_list.html:8
+msgid "Dump data"
+msgstr ""
+
+#: smuggler/templates/smuggler/change_list.html:13
+#: smuggler/templates/smuggler/load_data_form.html:4
+#: smuggler/templates/smuggler/load_data_form.html:22
+#: smuggler/templates/smuggler/load_data_form.html:30
+msgid "Load data"
+msgstr ""
+
+#: smuggler/templates/smuggler/load_data_form.html:21
+msgid "Home"
+msgstr ""
+
+#: smuggler/templates/smuggler/load_data_form.html:33
+msgid ""
+"Existing items with same <strong>primary key</strong> will be overwritten."
+msgstr ""
+
+#: smuggler/templates/smuggler/load_data_form.html:39
+msgid "Please correct the error below."
+msgstr ""
+
+#: smuggler/templates/smuggler/load_data_form.html:41
+msgid "Please correct the errors below."
+msgstr ""
+
+#: smuggler/templates/smuggler/load_data_form.html:50
+msgid "Load"
+msgstr ""
+
+#: smuggler/views.py:47
 #, python-format
 msgid "An exception occurred while dumping data: %s"
 msgstr ""
 
-#: views.py:113
+#: smuggler/views.py:117
 #, python-format
 msgid "Successfully imported %(count)d file."
 msgid_plural "Successfully imported %(count)d files."
 msgstr[0] ""
 msgstr[1] ""
 
-#: views.py:118
+#: smuggler/views.py:122
 #, python-format
 msgid "Loaded %(count)d object."
 msgid_plural "Loaded %(count)d objects."
 msgstr[0] ""
 msgstr[1] ""
 
-#: views.py:127
+#: smuggler/views.py:131
 #, python-format
 msgid "An exception occurred while loading data: %s"
-msgstr ""
-
-#: templates/smuggler/change_list.html:9
-msgid "Dump data"
-msgstr ""
-
-#: templates/smuggler/change_list.html:14
-#: templates/smuggler/load_data_form.html:6
-#: templates/smuggler/load_data_form.html:18
-#: templates/smuggler/load_data_form.html:23
-msgid "Load data"
-msgstr ""
-
-#: templates/smuggler/load_data_form.html:17
-msgid "Home"
-msgstr ""
-
-#: templates/smuggler/load_data_form.html:26
-msgid ""
-"Existing items with same <strong>primary key</strong> will be overwritten."
-msgstr ""
-
-#: templates/smuggler/load_data_form.html:34
-msgid "Please correct the error below."
-msgstr ""
-
-#: templates/smuggler/load_data_form.html:55
-msgid "Load"
 msgstr ""

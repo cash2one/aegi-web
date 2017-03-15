@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-22 07:13+0000\n"
+"POT-Creation-Date: 2017-03-15 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,910 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: aegicare_web/settings.py:114
+#: aegicare_web/settings.py:122
 msgid "Chinese"
 msgstr ""
 
-#: aegicare_web/settings.py:115
+#: aegicare_web/settings.py:123
 msgid "English"
 msgstr ""
 
-#: templates/home/home.html:13
-msgid "安吉康尔(深圳)科技有限公司"
-msgstr "Aegicare(Shenzhen) Technology Co., Ltd"
+#: dashboard.py:25
+msgid "Group: Administration & Applications"
+msgstr ""
 
-#: templates/home/home.html:63
+#: dashboard.py:30 grappelli/dashboard/dashboards.py:152
+msgid "Administration"
+msgstr ""
+
+#: dashboard.py:36 grappelli/dashboard/dashboards.py:146
+#: grappelli/dashboard/modules.py:212
+msgid "Applications"
+msgstr ""
+
+#: dashboard.py:68
+msgid "Media Management"
+msgstr ""
+
+#: dashboard.py:72
+msgid "FileBrowser"
+msgstr ""
+
+#: dashboard.py:82
+msgid "Database Management"
+msgstr ""
+
+#: dashboard.py:86
+msgid "Dump Data (For Developer)"
+msgstr ""
+
+#: dashboard.py:92
+msgid "Load Data (For Developer)"
+msgstr ""
+
+#: dashboard.py:103 grappelli/dashboard/modules.py:186
+msgid "Links"
+msgstr ""
+
+#: dashboard.py:107
+msgid "DeltaCat Main"
+msgstr ""
+
+#: dashboard.py:112
+msgid "Django Documentation"
+msgstr ""
+
+#: dashboard.py:117
+msgid "Grappelli Documentation"
+msgstr ""
+
+#: dashboard.py:157 grappelli/dashboard/dashboards.py:157
+#: grappelli/dashboard/modules.py:289 grappelli/templates/admin/index.html:71
+msgid "Recent Actions"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:90
+msgid "Dashboard"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:134
+msgid "Quick links"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:137
+msgid "Return to site"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:138
+#: grappelli/templates/admin/auth/user/change_password.html:11
+#: grappelli/templates/admin/auth/user/change_password.html:57
+#: grappelli/templates/admin/base.html:91
+msgid "Change password"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:140 grappelli/templates/admin/base.html:94
+msgid "Log out"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:161
+msgid "Latest Django News"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:168
+msgid "Support"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:171
+msgid "Django documentation"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:176
+msgid "Django \"django-users\" mailing list"
+msgstr ""
+
+#: grappelli/dashboard/dashboards.py:181
+msgid "Django irc channel"
+msgstr ""
+
+#: grappelli/dashboard/modules.py:350
+msgid "RSS Feed"
+msgstr ""
+
+#: grappelli/dashboard/templates/admin/index.html:25
+#: grappelli/templates/admin/500.html:9
+#: grappelli/templates/admin/app_index.html:11
+#: grappelli/templates/admin/auth/user/change_password.html:7
+#: grappelli/templates/admin/base.html:124
+#: grappelli/templates/admin/change_form.html:153
+#: grappelli/templates/admin/change_list.html:150
+#: grappelli/templates/admin/change_list_filter_sidebar.html:151
+#: grappelli/templates/admin/constance/change_list.html:43
+#: grappelli/templates/admin/csv_export_selected_confirmation.html:9
+#: grappelli/templates/admin/delete_confirmation.html:13
+#: grappelli/templates/admin/delete_selected_confirmation.html:13
+#: grappelli/templates/admin/index.html:18
+#: grappelli/templates/admin/invalid_setup.html:9
+#: grappelli/templates/admin/object_history.html:9
+#: grappelli/templates/admin_doc/bookmarklets.html:8
+#: grappelli/templates/admin_doc/index.html:9
+#: grappelli/templates/admin_doc/missing_docutils.html:8
+#: grappelli/templates/admin_doc/model_detail.html:20
+#: grappelli/templates/admin_doc/model_index.html:23
+#: grappelli/templates/admin_doc/template_filter_index.html:25
+#: grappelli/templates/admin_doc/template_tag_index.html:27
+#: grappelli/templates/admin_doc/view_detail.html:7
+#: grappelli/templates/admin_doc/view_index.html:23
+#: grappelli/templates/grp_doc/basic_page_structure.html:132
+#: grappelli/templates/grp_doc/context_navigation.html:55
+#: grappelli/templates/registration/password_change_done.html:6
+#: grappelli/templates/registration/password_change_form.html:6
+#: grappelli/templates/reversion/recover_form.html:7
+#: grappelli/templates/reversion/recover_list.html:6
+#: grappelli/templates/reversion/revision_form.html:7
+#: grappelli/templates/smuggler/load_data_form.html:24
+msgid "Home"
+msgstr ""
+
+#: grappelli/dashboard/templates/grappelli/dashboard/modules/app_list.html:19
+#: grappelli/dashboard/templates/grappelli/dashboard/modules/model_list.html:9
+#: grappelli/templates/admin/app_index.html:30
+#: grappelli/templates/admin/change_form.html:159
+#: grappelli/templates/admin/index.html:45
+#: grappelli/templates/related_widget_wrapper.html:18
+msgid "Add"
+msgstr ""
+
+#: grappelli/dashboard/templates/grappelli/dashboard/modules/recent_actions.html:18
+msgid "None Available"
+msgstr ""
+
+#: grappelli/templates/admin/404.html:7 grappelli/templates/admin/404.html:11
+msgid "Page not found"
+msgstr ""
+
+#: grappelli/templates/admin/404.html:12
+msgid "We're sorry, but the requested page could not be found."
+msgstr ""
+
+#: grappelli/templates/admin/500.html:10
+msgid "Server error"
+msgstr ""
+
+#: grappelli/templates/admin/500.html:15
+msgid "Server error (500)"
+msgstr ""
+
+#: grappelli/templates/admin/500.html:19
+msgid "Server Error <em>(500)</em>"
+msgstr ""
+
+#: grappelli/templates/admin/500.html:20
+msgid ""
+"There's been an error. It's been reported to the site administrators via e-"
+"mail and should be fixed shortly. Thanks for your patience."
+msgstr ""
+
+#: grappelli/templates/admin/actions.html:4
+msgid "Run the selected action"
+msgstr ""
+
+#: grappelli/templates/admin/actions.html:4
+msgid "Go"
+msgstr ""
+
+#: grappelli/templates/admin/actions.html:11
+msgid "Click here to select the objects across all pages"
+msgstr ""
+
+#: grappelli/templates/admin/actions.html:11
+#, python-format
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr ""
+
+#: grappelli/templates/admin/actions.html:12
+msgid "Clear selection"
+msgstr ""
+
+#: grappelli/templates/admin/app_index.html:13
+#, python-format
+msgid "<li>%(name)s</li>"
+msgstr ""
+
+#: grappelli/templates/admin/app_index.html:37
+#: grappelli/templates/admin/index.html:54
+msgid "You don´t have permission to edit anything."
+msgstr ""
+
+#: grappelli/templates/admin/auth/user/change_password.html:15
+#: grappelli/templates/registration/password_change_done.html:7
+#: grappelli/templates/registration/password_change_form.html:7
+msgid "Password change"
+msgstr ""
+
+#: grappelli/templates/admin/auth/user/change_password.html:24
+#, python-format
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: grappelli/templates/admin/auth/user/change_password.html:27
+#: grappelli/templates/admin/change_form.html:190
+#: grappelli/templates/admin/change_list.html:231
+#: grappelli/templates/admin/change_list_filter_sidebar.html:230
+#: grappelli/templates/admin/login.html:31
+#: grappelli/templates/smuggler/load_data_form.html:40
+msgid "Please correct the error below."
+msgstr ""
+
+#: grappelli/templates/admin/auth/user/change_password.html:27
+#: grappelli/templates/admin/change_form.html:190
+#: grappelli/templates/admin/change_list.html:231
+#: grappelli/templates/admin/change_list_filter_sidebar.html:230
+#: grappelli/templates/admin/login.html:31
+#: grappelli/templates/smuggler/load_data_form.html:42
+msgid "Please correct the errors below."
+msgstr ""
+
+#: grappelli/templates/admin/auth/user/change_password.html:34
+#: grappelli/templates/registration/password_change_form.html:30
+msgid "New password"
+msgstr ""
+
+#: grappelli/templates/admin/auth/user/change_password.html:46
+#: grappelli/templates/registration/password_change_form.html:37
+msgid "Password (again)"
+msgstr ""
+
+#: grappelli/templates/admin/auth/user/change_password.html:50
+#: grappelli/templates/registration/password_reset_confirm.html:29
+msgid "Enter the same password as above, for verification."
+msgstr ""
+
+#: grappelli/templates/admin/base.html:101
+msgid "View site"
+msgstr ""
+
+#: grappelli/templates/admin/base.html:106
+#: grappelli/templates/admin_doc/bookmarklets.html:9
+msgid "Documentation"
+msgstr ""
+
+#: grappelli/templates/admin/change_form.html:143
+#: grappelli/templates/admin/edit_inline/stacked.html:8
+msgid "Open All Items"
+msgstr ""
+
+#: grappelli/templates/admin/change_form.html:144
+#: grappelli/templates/admin/edit_inline/stacked.html:9
+msgid "Close All Items"
+msgstr ""
+
+#: grappelli/templates/admin/change_form.html:171
+#: grappelli/templates/admin/object_history.html:15
+#: grappelli/templates/reversion/revision_form.html:11
+msgid "History"
+msgstr ""
+
+#: grappelli/templates/admin/change_form.html:172
+msgid "View on site"
+msgstr ""
+
+#: grappelli/templates/admin/change_list.html:168
+#: grappelli/templates/admin/change_list_filter_sidebar.html:169
+#: grappelli/templates/smuggler/change_list.html:15
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: grappelli/templates/admin/change_list.html:197
+#: grappelli/templates/admin/change_list_filter_sidebar.html:184
+msgid "Filter"
+msgstr ""
+
+#: grappelli/templates/admin/change_list.html:258
+#: grappelli/templates/admin/constance/change_list.html:79
+#: grappelli/templates/admin/submit_line.html:10
+msgid "Save"
+msgstr ""
+
+#: grappelli/templates/admin/change_list_results.html:18
+msgid "Toggle sorting"
+msgstr ""
+
+#: grappelli/templates/admin/change_list_results.html:19
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr ""
+
+#: grappelli/templates/admin/change_list_results.html:20
+msgid "Remove from sorting"
+msgstr ""
+
+#: grappelli/templates/admin/constance/includes/results_list.html:8
+msgid "Name"
+msgstr ""
+
+#: grappelli/templates/admin/constance/includes/results_list.html:13
+msgid "Default"
+msgstr ""
+
+#: grappelli/templates/admin/constance/includes/results_list.html:18
+msgid "Value"
+msgstr ""
+
+#: grappelli/templates/admin/constance/includes/results_list.html:23
+msgid "Is modified"
+msgstr ""
+
+#: grappelli/templates/admin/csv_export_selected_confirmation.html:12
+msgid "Export selection as CSV"
+msgstr ""
+
+#: grappelli/templates/admin/csv_export_selected_confirmation.html:31
+msgid "Export following fields:"
+msgstr ""
+
+#: grappelli/templates/admin/csv_export_selected_confirmation.html:34
+msgid "Select all"
+msgstr ""
+
+#: grappelli/templates/admin/csv_export_selected_confirmation.html:54
+msgid "Back"
+msgstr ""
+
+#: grappelli/templates/admin/csv_export_selected_confirmation.html:55
+msgid "Export"
+msgstr ""
+
+#: grappelli/templates/admin/delete_confirmation.html:19
+#: grappelli/templates/admin/submit_line.html:7
+#: grappelli/templates/related_widget_wrapper.html:26
+msgid "Delete"
+msgstr ""
+
+#: grappelli/templates/admin/delete_confirmation.html:29
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: grappelli/templates/admin/delete_confirmation.html:37
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: grappelli/templates/admin/delete_confirmation.html:47
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: grappelli/templates/admin/delete_confirmation.html:55
+#: grappelli/templates/admin/delete_selected_confirmation.html:58
+msgid "Cancel"
+msgstr ""
+
+#: grappelli/templates/admin/delete_confirmation.html:56
+#: grappelli/templates/admin/delete_selected_confirmation.html:59
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: grappelli/templates/admin/delete_selected_confirmation.html:16
+msgid "Delete multiple objects"
+msgstr ""
+
+#: grappelli/templates/admin/delete_selected_confirmation.html:26
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: grappelli/templates/admin/delete_selected_confirmation.html:34
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: grappelli/templates/admin/delete_selected_confirmation.html:44
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: grappelli/templates/admin/edit_inline/stacked.html:10
+#: grappelli/templates/admin/edit_inline/stacked.html:58
+#: grappelli/templates/admin/edit_inline/tabular.html:94
+msgid "Add Item"
+msgstr ""
+
+#: grappelli/templates/admin/edit_inline/stacked.html:27
+#: grappelli/templates/admin/edit_inline/tabular.html:67
+msgid "View on Site"
+msgstr ""
+
+#: grappelli/templates/admin/edit_inline/stacked.html:29
+#: grappelli/templates/admin/edit_inline/tabular.html:69
+msgid "Move Item"
+msgstr ""
+
+#: grappelli/templates/admin/edit_inline/stacked.html:33
+#: grappelli/templates/admin/edit_inline/stacked.html:38
+#: grappelli/templates/admin/edit_inline/tabular.html:73
+#: grappelli/templates/admin/edit_inline/tabular.html:78
+msgid "Delete Item"
+msgstr ""
+
+#: grappelli/templates/admin/edit_inline/stacked.html:56
+#: grappelli/templates/admin/edit_inline/tabular.html:92
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: grappelli/templates/admin/edit_inline/tabular.html:8
+msgid "Add Another"
+msgstr ""
+
+#: grappelli/templates/admin/filter.html:4
+#: grappelli/templates/admin/filter_listing.html:3
+#, python-format
+msgid "%(filter_title)s"
+msgstr ""
+
+#: grappelli/templates/admin/includes/object_delete_summary.html:3
+msgid "Summary"
+msgstr ""
+
+#: grappelli/templates/admin/index.html:59
+msgid "Custom Views"
+msgstr ""
+
+#: grappelli/templates/admin/index.html:73
+msgid "My Actions"
+msgstr ""
+
+#: grappelli/templates/admin/index.html:76
+msgid "None available"
+msgstr ""
+
+#: grappelli/templates/admin/invalid_setup.html:16
+msgid ""
+"Something's wrong with your database installation. Make sure the appropriate "
+"database tables have been created, and make sure the database is readable by "
+"the appropriate user."
+msgstr ""
+
+#: grappelli/templates/admin/login.html:26
+#: grappelli/templates/admin/login.html:67
+#: grappelli/templates/registration/password_reset_complete.html:17
+msgid "Log in"
+msgstr ""
+
+#: grappelli/templates/admin/login.html:60
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: grappelli/templates/admin/object_history.html:26
+#: grappelli/templates/reversion/object_history.html:13
+#: grappelli/templates/reversion/recover_list.html:22
+msgid "Date/time"
+msgstr ""
+
+#: grappelli/templates/admin/object_history.html:27
+#: grappelli/templates/reversion/object_history.html:14
+msgid "User"
+msgstr ""
+
+#: grappelli/templates/admin/object_history.html:28
+msgid "Action"
+msgstr ""
+
+#: grappelli/templates/admin/object_history.html:34
+msgid "DATETIME_FORMAT"
+msgstr ""
+
+#: grappelli/templates/admin/object_history.html:42
+#: grappelli/templates/reversion/object_history.html:36
+msgid ""
+"This object doesn't have a change history. It probably wasn't added via this "
+"admin site."
+msgstr ""
+
+#: grappelli/templates/admin/pagination.html:8 grappelli/views/related.py:227
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: grappelli/templates/admin/pagination.html:13
+#: grappelli/templates/admin/pagination.html:15
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: grappelli/templates/admin/pagination.html:27
+msgid "Show all"
+msgstr ""
+
+#: grappelli/templates/admin/popup_response.html:3
+msgid "Popup closing..."
+msgstr ""
+
+#: grappelli/templates/admin/related_widget_wrapper.html:24
+#: grappelli/templates/related_widget_wrapper.html:16
+#, python-format
+msgid "Add another %(model)s"
+msgstr ""
+
+#: grappelli/templates/admin/submit_line.html:13
+msgid "Save as new"
+msgstr ""
+
+#: grappelli/templates/admin/submit_line.html:16
+msgid "Save and add another"
+msgstr ""
+
+#: grappelli/templates/admin/submit_line.html:19
+msgid "Save and continue editing"
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:10
+#: grappelli/templates/admin_doc/bookmarklets.html:16
+msgid "Bookmarklets"
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:13
+msgid "Documentation bookmarklets"
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:18
+msgid ""
+"\n"
+"            <p>To install bookmarklets, drag the link to your bookmarks\n"
+"    toolbar, or right-click the link and add it to your bookmarks. Now you "
+"can\n"
+"    select the bookmarklet from any page in the site.  Note that some of "
+"these\n"
+"    bookmarklets require you to be viewing the site from a computer "
+"designated\n"
+"    as \"internal\" (talk to your system administrator if you aren't sure "
+"if\n"
+"    your computer is \"internal\").</p>\n"
+"        "
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:27
+msgid "Documentation for this page"
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:28
+msgid ""
+"Jumps you from any page to the documentation for the view that generates "
+"that page."
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:31
+msgid "Show object ID"
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:32
+msgid ""
+"Shows the content-type and unique ID for pages that represent a single "
+"object."
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:35
+msgid "Edit this object (current window)"
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:36
+msgid "Jumps to the admin page for pages that represent a single object."
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:39
+msgid "Edit this object (new window)"
+msgstr ""
+
+#: grappelli/templates/admin_doc/bookmarklets.html:40
+msgid "As above, but opens the admin page in a new window."
+msgstr ""
+
+#: grappelli/templates/admin_doc/view_index.html:43
+msgid "Empty namespace"
+msgstr ""
+
+#: grappelli/templates/admin_doc/view_index.html:57
+msgid "Views by empty namespace"
+msgstr ""
+
+#: grappelli/templates/registration/logged_out.html:16
+msgid "Log in again"
+msgstr ""
+
+#: grappelli/templates/registration/password_change_done.html:16
+msgid "Your password was changed."
+msgstr ""
+
+#: grappelli/templates/registration/password_change_form.html:18
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: grappelli/templates/registration/password_change_form.html:23
+msgid "Old password"
+msgstr ""
+
+#: grappelli/templates/registration/password_change_form.html:46
+#: grappelli/templates/registration/password_reset_confirm.html:35
+msgid "Change my password"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_complete.html:16
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_confirm.html:18
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_confirm.html:21
+msgid "New password:"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_confirm.html:26
+msgid "Confirm password:"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_confirm.html:47
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_done.html:5
+msgid "Password reset successful"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_done.html:16
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_done.html:17
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_form.html:5
+msgid "Password reset"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_form.html:17
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_form.html:20
+msgid "Email address:"
+msgstr ""
+
+#: grappelli/templates/registration/password_reset_form.html:28
+msgid "Reset my password"
+msgstr ""
+
+#: grappelli/templates/related_widget_wrapper.html:8
+#, python-format
+msgid "Change selected %(model)s"
+msgstr ""
+
+#: grappelli/templates/related_widget_wrapper.html:10
+msgid "Change"
+msgstr ""
+
+#: grappelli/templates/related_widget_wrapper.html:24
+#, python-format
+msgid "Delete selected %(model)s"
+msgstr ""
+
+#: grappelli/templates/reversion/change_list.html:6
+#: grappelli/templates/reversion/recover_form.html:10
+#: grappelli/templates/reversion/recover_list.html:9
+#, python-format
+msgid "Recover deleted %(name)s"
+msgstr ""
+
+#: grappelli/templates/reversion/object_history.html:7
+msgid ""
+"Choose a date from the list below to revert to a previous version of this "
+"object."
+msgstr ""
+
+#: grappelli/templates/reversion/object_history.html:15
+msgid "Comment"
+msgstr ""
+
+#: grappelli/templates/reversion/recover_form.html:20
+msgid "Press the save button below to recover this version of the object."
+msgstr ""
+
+#: grappelli/templates/reversion/recover_list.html:16
+msgid ""
+"Choose a date from the list below to recover a deleted version of an object."
+msgstr ""
+
+#: grappelli/templates/reversion/recover_list.html:36
+msgid "There are no deleted objects to recover."
+msgstr ""
+
+#: grappelli/templates/reversion/revision_form.html:12
+#, python-format
+msgid "Revert %(verbose_name)s"
+msgstr ""
+
+#: grappelli/templates/reversion/revision_form.html:21
+msgid "Press the save button below to revert to this version of the object."
+msgstr ""
+
+#: grappelli/templates/smuggler/change_list.html:7
+msgid "Dump data"
+msgstr ""
+
+#: grappelli/templates/smuggler/change_list.html:11
+#: grappelli/templates/smuggler/load_data_form.html:6
+#: grappelli/templates/smuggler/load_data_form.html:25
+#: grappelli/templates/smuggler/load_data_form.html:35
+msgid "Load data"
+msgstr ""
+
+#: grappelli/templates/smuggler/load_data_form.html:46
+msgid ""
+"Existing items with same <strong>primary key</strong> will be overwritten."
+msgstr ""
+
+#: grappelli/templates/smuggler/load_data_form.html:53
+msgid "Load"
+msgstr ""
+
+#: grappelli/templatetags/grp_tags.py:65
+msgid "Django site admin"
+msgstr ""
+
+#: grappelli/tests/test_switch.py:103 grappelli/tests/test_switch.py:162
+#: grappelli/views/switch.py:37 grappelli/views/switch.py:48
+msgid "Permission denied."
+msgstr ""
+
+#: grappelli/tests/test_switch.py:146 grappelli/views/switch.py:40
+#: grappelli/views/switch.py:51
+#, python-format
+msgid "%(name)s object with primary key %(key)r does not exist."
+msgstr ""
+
+#: grappelli/views/related.py:99 grappelli/views/related.py:129
+msgid "?"
+msgstr ""
+
+#: news/templates/news/index.html:5 news/templates/news/news.html:5
+msgid "安吉康尔 | 媒体新闻"
+msgstr ""
+
+#: order/templates/order/order.html:5
+msgid "安吉康尔 | 服务购买"
+msgstr ""
+
+#: templates/about.html:6
+#, fuzzy
+#| msgid "关于我们"
+msgid "安吉康尔 | 关于我们"
+msgstr "ABOUT"
+
+#: templates/base.html:56
 msgid "关于我们"
 msgstr "ABOUT"
 
-#: templates/home/home.html:64
+#: templates/base.html:57
 msgid "产品介绍"
-msgstr "PRODUCTS&SERVICE"
+msgstr "PRODUCTS"
 
-#: templates/home/home.html:65
+#: templates/base.html:66
 msgid "服务流程"
 msgstr "PROCEDURE"
 
-#: templates/home/home.html:66
-msgid "购买"
+#: templates/base.html:67
+msgid "在线购买"
 msgstr "ORDER"
 
-#: templates/home/home.html:72
+#: templates/base.html:73
 msgid "登录"
 msgstr "LOGIN"
 
-#: templates/home/home.html:73
+#: templates/base.html:73
 msgid "注册"
 msgstr "REGISTER"
+
+#: templates/cancer.html:6
+msgid "安吉康尔 | 癌症诊断"
+msgstr ""
+
+#: templates/career.html:5
+msgid "安吉康尔 | 人才招聘"
+msgstr ""
+
+#: templates/cdss.html:6
+msgid "安吉康尔 | 临床决策智能辅助系统"
+msgstr ""
+
+#: templates/genetic.html:5
+msgid "安吉康尔 | 遗传病筛查"
+msgstr ""
+
+#: templates/home.html:5
+msgid "安吉康尔 | 基因大数据精准医疗人工智能平台"
+msgstr ""
+
+#: templates/mission.html:5
+msgid "安吉康尔 | 公司愿景"
+msgstr ""
+
+#: templates/privacy.html:6
+msgid "安吉康尔 | 隐私安全"
+msgstr ""
+
+#: templates/report.html:5
+msgid "安吉康尔 | 报告解读"
+msgstr ""
+
+#: templates/team.html:6
+msgid "安吉康尔 | 团队介绍"
+msgstr ""
+
+#: templates/terms.html:5
+msgid "安吉康尔 | 服务协议"
+msgstr ""
+
+#: templates/workflow.html:5
+#, fuzzy
+#| msgid "服务流程"
+msgid "安吉康尔 | 服务流程"
+msgstr "PROCEDURE"
+
+#~ msgid "安吉康尔(深圳)科技有限公司"
+#~ msgstr "Aegicare(Shenzhen) Technology Co., Ltd"
