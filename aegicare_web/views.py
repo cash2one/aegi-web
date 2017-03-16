@@ -28,8 +28,6 @@ def HomePage(request):
         res = latest_news[0:2]
     else:
         res = latest_news
-
-    print res
     return render(request, 'home.html',{'news':res})
 
 def About(request):

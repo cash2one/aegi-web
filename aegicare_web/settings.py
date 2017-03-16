@@ -47,7 +47,9 @@ INSTALLED_APPS = [
 
 ]
 
+
 MIDDLEWARE_CLASSES = [
+    'aegicare_web.force_default_middleware.ForceDefaultLanguageMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
