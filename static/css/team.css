@@ -94,19 +94,19 @@ Description: for team page
 }
 
 .profile--liyang__portrait {
-    background-image: url("/static/img/liyang.png")
+    background-image: url("/static/img/liyang.jpg")
 }
 
 .profile--liuyang__portrait {
-    background-image: url("/static/img/liuyang.png")
+    background-image: url("/static/img/liuyang.jpg")
 }
 
 .profile--lvpeitao__portrait {
-    background-image: url("/static/img/lvpeitao.png")
+    background-image: url("/static/img/lvpeitao.jpg")
 }
 
 .profile--zhangyang__portrait {
-    background-image: url("/static/img/figure.png")
+    background-image: url("/static/img/zhangyang.jpg")
 }
 
 .profile__name {

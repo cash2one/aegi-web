@@ -4,15 +4,6 @@ Author: Frank
 Description: for Aegicare home page
 */
 
-#mainnav {
-    margin-left: 50px;
-}
-
-#mainnav li {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 #topcarousel .btn{
     background-color: #1BA8B7;
     border: none;

@@ -37,5 +37,10 @@ Function: for css
 
 #order .buy{
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
+}
+
+#order .buybtn a{
+    background-color: #1BA8B7;
+    border: none;
 }

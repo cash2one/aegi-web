@@ -5,13 +5,13 @@ Description: for Aegicare news page
 */
 /*news main page*/
 
-#news,#newsdetail{
+#news, #newsdetail {
     background-color: #F5F5F5;
-    padding-left:40px;
+    padding-left: 40px;
     padding-right: 40px;
 }
 
-#news img{
+#news img {
     max-height: 40px;
 }
 
@@ -23,6 +23,19 @@ Description: for Aegicare news page
 
 }
 
+@media (max-width: 768px) {
+    #news #newswrapper, #newsdetail #newswrapper {
+        padding-top: 20px;
+        margin-top: 80px;
+        min-height:400px;
+    }
+
+    #news, #newsdetail {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 #news .newsitem > .title {
     font-size: 200%;
     font-weight: bold;
@@ -32,29 +45,29 @@ Description: for Aegicare news page
 
 #news .newsitem .newscontent {
     font-size: 14px;
-    padding-left: 30px;
+    padding-left: 3%;
     margin-top: 10px;
 }
 
-#news .title{
+#news .title {
     color: #1BA8B7;
     font-size: 110%;
     font-weight: bold;
 
 }
 
-#news .time{
+#news .time {
     color: #666666;
     margin: 5px 0;
 }
 
-#news .more{
+#news .more {
     text-align: center;
     margin-top: 40px;
 
 }
 
-#news .more a{
+#news .more a {
     background-color: #1BA8B7;
     border: 1px #1BA8B7;
     color: white;
@@ -81,12 +94,6 @@ Description: for Aegicare news page
     margin-bottom: 20px;
 }
 
-#newsdetail .content{
-    padding-left:30px;
+#newsdetail .content {
+    padding-left: 30px;
 }
-
-
-
-
-
-

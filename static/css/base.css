@@ -52,7 +52,7 @@ img#logo {
     text-decoration: none;
 }
 
-.login div a:hover{
+.login div a:hover {
     color: #dddddd;
     text-decoration: none;
 }
@@ -65,7 +65,7 @@ img#logo {
     color: #1BA8B7;
 }
 
-#mainnav>li>a {
+#mainnav > li > a {
     padding-top: 5px;
     padding-bottom: 5px;
     line-height: 20px;
@@ -75,16 +75,28 @@ img#logo {
     margin-right: 0px;
 }
 
-.navbar-right a:hover{
+.navbar-right a:hover {
     color: red;
 }
+
 /*.navbar-right a:hover{color: red;}*/
-
-#mainnav {
-    margin-left: 50px;
-}
-
 #mainnav li {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .login div a:nth-child(1) {
+        margin-left: 20px;
+    }
+
+    #mainnav {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    #mainnav {
+        margin-left: 50px;
+    }
 }
