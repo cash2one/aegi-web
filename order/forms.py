@@ -2,14 +2,16 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import unicode_literals
-from django.forms import ModelForm,RadioSelect,ChoiceField,NumberInput
+from django.forms import ModelForm,RadioSelect,ChoiceField,NumberInput,CharField,Select
 from order.models import *
 
 # Create your models here.
 class orderForm(ModelForm):
-    province = ChoiceField()
-    city = ChoiceField()
-    county = ChoiceField()
+
+    #use charfiled since django check the validation of choice field
+    province = CharField(widget=Select)
+    city = CharField(widget=Select)
+    county = CharField(widget=Select)
 
     class Meta:
         model = orderModel
@@ -52,9 +54,6 @@ class orderForm(ModelForm):
             'class': 'mui-input-numbox',
         })
 
-
-
-
         self.fields['username'].widget.attrs.update({
             'placeholder': '请输入联系人姓名',
             'class': 'form-control',
@@ -90,6 +89,11 @@ class orderForm(ModelForm):
 
         self.fields['paymentMethod'].widget.attrs.update({
             'class': 'hide',
+        })
+
+        self.fields['invoice'].widget.attrs.update({
+            'placeholder':'发票抬头',
+            'class': 'form-control',
         })
 
         self.fields['message'].widget.attrs.update({

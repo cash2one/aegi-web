@@ -7,10 +7,11 @@
 
 {% block content %}
     {% load static %}
-    <link rel="stylesheet" href="{% static "order/pay.css" %}?time={% now "YmdHi" %}">
+    <link rel="stylesheet" href="{% static "order/cart.css" %}?time={% now "YmdHi" %}">
     <script src="{% static "order/mui.min.js" %}?time={% now "YmdHi" %}"></script>
     <script src="{% static "order/area.js" %}?time={% now "YmdHi" %}"></script>
-    <script src="{% static "order/order.js" %}?time={% now "YmdHi" %}"></script>
+    <script src="{% static "order/cart.js" %}?time={% now "YmdHi" %}"></script>
+    <script src="{% static "order/jquery.form.min.js" %}?time={% now "YmdHi" %}"></script>
 
     <div id="shopping-cart">
         <div class="container">
@@ -18,6 +19,9 @@
                 <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                         <div class="modal-body warning-body">
+                            <div>
+                                <img src="{% static 'order/warning.png' %}">
+                            </div>
                             <div id="message">请按照提示完善信息!</div>
                             <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
                         </div>
@@ -25,10 +29,13 @@
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
 
-{#        onsubmit="return checkForm()"#}
+            {#        onsubmit="return checkForm()"#}
 
-            <form method="post" class="form-horizontal" role="form"  novalidate="novalidate"
-                  action="{% url 'order:order' %}">{% csrf_token %}
+            <input class="hide" id="languageCode" value={{ languageCode }}></input>
+
+            <form method="post" id="shopping-form" class="form-horizontal" role="form" novalidate="novalidate"
+                  onsubmit="return false;"
+                  action="{% url 'order:cart' %}">{% csrf_token %}
 
                 <div id="servicebox" class="mainbox firstbox">
                     <div class="toptitle"><h3>产品信息</h3></div>
@@ -80,7 +87,7 @@
                                     {{ myForm.kitId }}
                                     {{ myForm.kitId.errors }}
                                 </div>
-                                <a class="btn btn-primary">校验</a>
+                                <a class="btn btn-primary kitid-validation">校验</a>
                             </div>
                             <div class="kit_notice">
                                 如果您从医生处拿到采集管，安吉康尔将不再为您邮寄唾液采集管。请进行采集管校验，确保您拿到的是安吉康尔为您提供的产品。
@@ -126,7 +133,6 @@
                                     {{ myForm.province }}
                                     {{ myForm.city }}
                                     {{ myForm.county }}
-                                    <script type="text/javascript">_init_area();</script>
                                 </div>
                                 <div id="show"></div>
                             </div>
@@ -136,8 +142,7 @@
                     <div class="form-group">
                         <label for="username" class="col-md-3 control-label">详细地址 :</label>
                         <div class="col-md-7">
-                            <input class="form-control" id="address" name="address" type="text"
-                                   placeholder="请输入您详细的地址"/>
+                            {{ myForm.address }}
                         </div>
                     </div>
 
@@ -181,8 +186,7 @@
                     <div class="form-group invoice_title hide">
                         <label for="invoice" class="col-md-3 control-label">发票抬头 :</label>
                         <div class="col-md-7">
-                            <input type="text" class="form-control" name="invoice"
-                                   placeholder="发票抬头">
+                            {{ myForm.invoice }}
                             <div class="invoice_notice">
                                 安吉康尔提供<span style="color: red">咨询服务费</span>发票。请妥善保管发票，退货、退款若无法提供发票，需扣除相应手续费用。
                             </div>
@@ -227,14 +231,31 @@
                         <div class="col-md-8 check">
                             <div id="finalPriceDiv">
                                 <span id="finalPriceDiv1">应付 : ￥<span id="finalPrice">6999.00</span></span>
-                                <button type="submit" class="btn btn-lg btn-primary btn-submit" onclick="checkForm()">提交订单</button>
+                                <button type="submit" class="btn btn-lg btn-primary btn-submit">提交订单</button>
                             </div>
                         </div>
                     </div>
+
+                    {% if myForm.errors %}
+                        {% for field in myForm %}
+                            {% for error in field.errors %}
+                                <div class="alert alert-danger">
+                                    <strong>{{ error|escape }}</strong>
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                        {% for error in myForm.non_field_errors %}
+                            <div class="alert alert-danger">
+                                <strong>{{ error|escape }}</strong>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
                 </div>
 
             </form>
-        </div>
+
+        </span>
     </div>
 
 {% endblock %}

@@ -44,3 +44,11 @@ Function: for css
     background-color: #1BA8B7;
     border: none;
 }
+
+#order .payment{
+    text-align: center;
+}
+
+#order .payment .description{
+    margin: 20px 0;
+}

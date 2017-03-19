@@ -107,7 +107,12 @@
 }
 
 #shopping-cart #warning .warning-body #message{
-    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#shopping-cart #warning .warning-body img{
+    width: 40px;
 }
 
 #shopping-cart #warning .warning-body button{
