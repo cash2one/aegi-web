@@ -25,7 +25,7 @@ SECRET_KEY = 'fid6gqqw92yj-rh&2p1@47ee$i5t_6=ip30x2@%*q_!tq0*=ws'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.aegicare.com','54.254.151.249','119.23.47.227']
+ALLOWED_HOSTS = ['127.0.0.1', '.aegicare.com','54.254.151.249','119.23.47.227','10.10.10.20']
 
 
 # Application definition
@@ -42,10 +42,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'order',
     'news',
-
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.weibo',
+    'allauth.socialaccount.providers.weixin',
 ]
+
+SITE_ID = 1
 
 
 MIDDLEWARE_CLASSES = [
@@ -78,6 +85,13 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
 
 WSGI_APPLICATION = 'aegicare_web.wsgi.application'
 
@@ -153,6 +167,20 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'django.contrib.staticfiles.finders.FileSystemFinder',
 )
+
+#####allauth configuration#####
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+#Determines the expiration date of email confirmation mails (# of days).
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7
+ACCOUNT_EMAIL_REQUIRED =True
+ACCOUNT_EMAIL_VERIFICATION ="optional"
+ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
+ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT =300
+
+ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION =False
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE =False
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE =True
+
 
 GRAPPELLI_ADMIN_TITLE = 'Aegicare Admin'
 GRAPPELLI_INDEX_DASHBOARD = 'dashboard.CustomIndexDashboard'

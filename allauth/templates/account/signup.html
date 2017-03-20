@@ -1,0 +1,92 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+{% block title %}
+    <title>{% trans "安吉康尔 | 用户注册" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/account.css" %}?time={% now "YmdHi" %}">
+    <script src="{% static "js/account.js" %}?time={% now "YmdHi" %}"></script>
+    <div class="container">
+        <div class="register">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="header">注册安吉康尔使用我们的产品</div>
+                    <form class="form-horizontal signup" id="signup_form" method="post"
+                          action="{% url 'account_signup' %}">
+                        {% csrf_token %}
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="id_username" placeholder="用户名"
+                                       autofocus="autofocus" maxlength="150" minlength="1" name="username">
+                            </div>
+                        </div>
+
+                        <div class="error-msg hide" id="username-msg">
+                            用户名已经注册
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" name="email" class="form-control" id="id_email" placeholder="邮箱">
+                            </div>
+                        </div>
+
+                        <div class="error-msg hide" id="email-msg">
+                            邮箱地址错误
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" id="id_password1" name="password1"
+                                       placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="error-msg hide" id="password1-msg">
+                            密码至少为8位
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" id="id_password2" name="password2"
+                                       placeholder="密码确认">
+                            </div>
+                        </div>
+                        <div class="error-msg hide" id="password2-msg">
+                            密码不一致
+                        </div>
+
+                        <div class="form-group terms">
+                            <div class="col-sm-12">
+                                我同意 <a href={% url 'terms' %}>服务条款</a> 和 <a href="{% url 'privacy'%}">隐私政策</a>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group submit-button">
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-info">注册</button>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group submit-button">
+                                <div class="col-sm-4">
+                                    已有账号? <a href="{{ login_url }}">登录</a>
+                                </div>
+
+                            </div>
+
+                            {% if redirect_field_value %}
+                                <input type="hidden" name="{{ redirect_field_name }}"
+                                       value="{{ redirect_field_value }}"/>
+                            {% endif %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

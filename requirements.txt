@@ -2,3 +2,4 @@ Django==1.10.4
 tablib
 diff_match_patch
 pillow
+django-allauth

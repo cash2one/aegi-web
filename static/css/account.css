@@ -1,0 +1,46 @@
+/*
+Author:Frank
+Date:20170320
+Description: for user sign up and login
+*/
+
+.register {
+    margin-top: 180px;
+    margin-bottom: 40px;
+    width: 80%;
+    background-color: white;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.register .header {
+    font-size: 180%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.register .submit-button button{
+    width: 100%;
+}
+
+.register a{
+    color: #1BA8B7;
+    text-decoration: none;
+}
+
+.register .form-group{
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.register .terms{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.register .error-msg{
+    color: red;
+}
+

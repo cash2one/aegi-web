@@ -48,4 +48,5 @@ urlpatterns += i18n_patterns(
     url(r'^mission/$', views.mission, name='mission'),
     url(r'^order/', include('order.urls', namespace="order")),
     url(r'^news/', include('news.urls', namespace="news")),
+    url(r'^accounts/', include('allauth.urls')),
 )

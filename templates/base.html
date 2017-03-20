@@ -71,7 +71,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="login">
                     <div>
-                        <a href="../admin/">{% trans "登录" %}</a> / <a href="../admin/">{% trans "注册" %}</a>
+                        <a href="{% url 'account_login' %}">{% trans "登录" %}</a> / <a
+                            href="{% url 'account_signup' %}">{% trans "注册" %}</a>
                     </div>
                 </li>
             </ul>
@@ -178,7 +179,10 @@
             </div>
 
         </div>
-        <input id="returnTop" type="button" value="Top">
+
+        <div id="returnTop">
+            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+        </div>
 
         <hr/>
 

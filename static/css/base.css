@@ -66,7 +66,7 @@ img#logo {
 }
 
 #mainnav > li > a {
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 5px;
     line-height: 20px;
 }
@@ -80,6 +80,11 @@ img#logo {
 }
 
 /*.navbar-right a:hover{color: red;}*/
+
+#mainnav {
+    margin-left: 50px;
+}
+
 #mainnav li {
     margin-left: 10px;
     margin-right: 10px;
@@ -93,10 +98,10 @@ img#logo {
     #mainnav {
         margin-left: 10px;
     }
-}
 
-@media (min-width: 768px) {
-    #mainnav {
-        margin-left: 50px;
+    #mainnav > li > a {
+        padding-top: 8px;
+        padding-bottom: 5px;
+        line-height: 10px;
     }
 }

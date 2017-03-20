@@ -20,6 +20,8 @@ Description: for Aegicare news page
     margin-top: 80px;
     min-height: 600px;
     background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -27,13 +29,19 @@ Description: for Aegicare news page
     #news #newswrapper, #newsdetail #newswrapper {
         padding-top: 20px;
         margin-top: 80px;
-        min-height:400px;
+        min-height: 360px;
     }
 
     #news, #newsdetail {
         padding-left: 0px;
         padding-right: 0px;
     }
+
+    /*#news .newsitem > .title {font-size: 120%;margin-bottom: 10px;}*/
+    #news img {
+        display: none;
+    }
+
 }
 
 #news .newsitem > .title {
@@ -94,6 +102,6 @@ Description: for Aegicare news page
     margin-bottom: 20px;
 }
 
-#newsdetail .content {
-    padding-left: 30px;
-}
+/*#newsdetail .content{
+    padding-left:0px;
+}*/
