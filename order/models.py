@@ -68,7 +68,24 @@ class orderModel(models.Model):
     invoice = models.CharField(max_length=50, blank=True)
     message = models.CharField(max_length=255, blank=True)
 
+    def __str__(self):              # __unicode__ on Python 2
+        return str(self.number)+" "+self.email+" "+self.phone+" "+self.paymentMethod
+
+#generate a transaction for pay
+class transactionModel(models.Model):
+    order = models.OneToOneField(orderModel)
+    out_trade_no = models.CharField(max_length=30)
+    price = models.FloatField(default=0)   #price
+    status = models.IntegerField(default=0)  #1 success
+
+    def __str__(self):              # __unicode__ on Python 2
+        return self.out_trade_no
+
 
 class productModel(models.Model):
-    kitId = models.CharField(max_length=8,unique=True,default="00000000")
+    kitId = models.CharField(max_length=12,unique=True,default="1111000000")
     price = models.FloatField()
+    status = models.IntegerField(default=0)  #0未使用; 1已下单未支付; 2已支付; 3已寄出(从医生处不需要寄送); 4已注册绑定采集管; 5采集管回到公司; 6采集管到测序公司; 7收到测序数据; 8产生报告
+
+    def __str__(self):              # __unicode__ on Python 2
+        return self.kitId + " " + str(self.price)+ " " + str(self.status)

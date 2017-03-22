@@ -1,0 +1,5 @@
+DEBUG:django.db.backends:(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

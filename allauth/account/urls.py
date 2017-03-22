@@ -8,6 +8,9 @@ urlpatterns = [
     url(r"^login/$", views.login, name="account_login"),
     url(r"^logout/$", views.logout, name="account_logout"),
 
+    #added 20170321
+    url(r"^ajax/checkUsername/$", views.checkUsername, name="checkUsername"),
+
     url(r"^password/change/$", views.password_change,
         name="account_change_password"),
     url(r"^password/set/$", views.password_set, name="account_set_password"),

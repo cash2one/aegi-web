@@ -12,12 +12,13 @@ var aegicare = {
                 success: function (result) {
                     var jsondata = eval(result);
                     var url = jsondata['url'];
+                    var out_trade_no = jsondata['out_trade_no']
                     if (url) {
                         if (window.location.href == url) {
                             window.location.reload();
                         }
                         else {
-                            window.location = decodeURIComponent(url);
+                            window.location = decodeURIComponent(url+'?trade_no='+out_trade_no);
                         }
                     }
                 },

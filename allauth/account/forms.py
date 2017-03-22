@@ -50,7 +50,8 @@ class PasswordField(forms.CharField):
                                   app_settings.PASSWORD_INPUT_RENDER_VALUE)
         kwargs['widget'] = forms.PasswordInput(render_value=render_value,
                                                attrs={'placeholder':
-                                                      _(kwargs.get("label"))})
+                                                      _(kwargs.get("label")),
+                                                      'class':'form-control'})
         super(PasswordField, self).__init__(*args, **kwargs)
 
 
@@ -232,10 +233,12 @@ class BaseSignupForm(_base_signup_form_class()):
                                widget=forms.TextInput(
                                    attrs={'placeholder':
                                           _('Username'),
-                                          'autofocus': 'autofocus'}))
+                                          'autofocus': 'autofocus',
+                                          'class':'form-control'}))
     email = forms.EmailField(widget=forms.TextInput(
         attrs={'type': 'email',
-               'placeholder': _('E-mail address')}))
+               'placeholder': _('E-mail address'),
+               'class':'form-control'}))
 
     def __init__(self, *args, **kwargs):
         email_required = kwargs.pop('email_required',

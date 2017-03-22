@@ -51,4 +51,16 @@ Function: for css
 
 #order .payment .description{
     margin: 20px 0;
+    font-size: 120%;
+}
+
+/*error page*/
+#order .order-error{
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+}
+
+#order .wx > img{
+    margin-bottom: 30px;
 }

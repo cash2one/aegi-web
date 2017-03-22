@@ -22,13 +22,27 @@ class productModelResource(resources.ModelResource):
 
 # Register your models here.
 class productModelAdmin(ImportExportModelAdmin):
-    list_display = ('kitId','price')
-    list_filter = ['price']
+    list_display = ('kitId','price','status')
+    list_filter = ['price','status']
     search_fields = ['kitId']
     change_list_template = 'smuggler/change_list.html'
     resource_class = productModelResource
     pass
 
+class transactionModelResource(resources.ModelResource):
+    class Meta:
+        model = transactionModel
+
+# Register your models here.
+class transactionModelAdmin(ImportExportModelAdmin):
+    list_display = ('order','out_trade_no','price','status')
+    list_filter = ['status']
+    search_fields = ['out_trade_no','price']
+    change_list_template = 'smuggler/change_list.html'
+    resource_class = transactionModelResource
+    pass
+
 # register the admin class
 admin.site.register(orderModel,orderModelAdmin)
 admin.site.register(productModel,productModelAdmin)
+admin.site.register(transactionModel,transactionModelAdmin)

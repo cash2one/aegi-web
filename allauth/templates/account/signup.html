@@ -13,76 +13,83 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="header">注册安吉康尔使用我们的产品</div>
+                    <input class="hide" id="languageCode" value={{ languageCode }}>
                     <form class="form-horizontal signup" id="signup_form" method="post"
                           action="{% url 'account_signup' %}">
                         {% csrf_token %}
+                        {#                        {{ form.as_p }}#}
+
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="id_username" placeholder="用户名"
-                                       autofocus="autofocus" maxlength="150" minlength="1" name="username">
+                                {{ form.username }}
                             </div>
                         </div>
-
                         <div class="error-msg hide" id="username-msg">
-                            用户名已经注册
+
+                        </div>
+                        <div class="submit-error">
+                            {{ form.username.errors }}
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                {{ form.email }}
+                            </div>
+                        </div>
+
+                        <div class="error-msg hide" id="email-msg"></div>
+                        <div class="submit-error">
+                            {{ form.email.errors }}
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="email" name="email" class="form-control" id="id_email" placeholder="邮箱">
+                                {{ form.password1 }}
                             </div>
                         </div>
-
-                        <div class="error-msg hide" id="email-msg">
-                            邮箱地址错误
+                        <div class="error-msg hide" id="password1-msg"></div>
+                        <div class="submit-error">
+                            {{ form.password1.errors }}
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="password" class="form-control" id="id_password1" name="password1"
-                                       placeholder="密码">
-                            </div>
-                        </div>
-                        <div class="error-msg hide" id="password1-msg">
-                            密码至少为8位
-                        </div>
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="password" class="form-control" id="id_password2" name="password2"
-                                       placeholder="密码确认">
+                                {{ form.password2 }}
                             </div>
                         </div>
-                        <div class="error-msg hide" id="password2-msg">
-                            密码不一致
+                        <div class="error-msg hide" id="password2-msg"></div>
+                        <div class="submit-error">
+                            {{ form.password2.errors }}
                         </div>
 
                         <div class="form-group terms">
                             <div class="col-sm-12">
-                                我同意 <a href={% url 'terms' %}>服务条款</a> 和 <a href="{% url 'privacy'%}">隐私政策</a>
+                                我同意 <a href={% url 'terms' %}>服务条款</a> 和 <a href="{% url 'privacy' %}">隐私政策</a>
                             </div>
                         </div>
 
 
                         <div class="form-group submit-button">
-                                <div class="col-sm-6">
-                                    <button type="submit" class="btn btn-info">注册</button>
-                                </div>
-
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-info">注册</button>
                             </div>
 
-                            <div class="form-group submit-button">
-                                <div class="col-sm-4">
-                                    已有账号? <a href="{{ login_url }}">登录</a>
-                                </div>
+                        </div>
 
+                        <div class="form-group submit-button">
+                            <div class="col-sm-4">
+                                已有账号? <a href="{{ login_url }}">登录</a>
                             </div>
 
-                            {% if redirect_field_value %}
-                                <input type="hidden" name="{{ redirect_field_name }}"
-                                       value="{{ redirect_field_value }}"/>
-                            {% endif %}
+                        </div>
+
+                        {% if redirect_field_value %}
+                            <input type="hidden" name="{{ redirect_field_name }}"
+                                   value="{{ redirect_field_value }}"/>
+                        {% endif %}
                     </form>
                 </div>
             </div>

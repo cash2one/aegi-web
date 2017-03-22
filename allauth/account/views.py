@@ -221,7 +221,8 @@ class SignupView(RedirectAuthenticatedUserMixin, CloseableSignupMixin,
                                                  redirect_field_name)
         ret.update({"login_url": login_url,
                     "redirect_field_name": redirect_field_name,
-                    "redirect_field_value": redirect_field_value})
+                    "redirect_field_value": redirect_field_value,
+                    'languageCode':self.request.LANGUAGE_CODE})
         return ret
 
 
@@ -751,3 +752,20 @@ class EmailVerificationSentView(TemplateView):
 
 
 email_verification_sent = EmailVerificationSentView.as_view()
+
+
+import json
+from django.http import HttpResponse
+from django.contrib.auth.models import User
+
+#validate the username
+def checkUsername(request):
+    isExist = 0
+    if request.method == 'POST':
+        username = request.POST.get('username',0)
+        if User.objects.filter(username=username).exists():
+            isExist = 1
+
+    jsonData = {'isExist':isExist}
+    toJson = json.dumps(jsonData)
+    return HttpResponse(toJson, content_type = "application/json")

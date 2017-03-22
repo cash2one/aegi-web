@@ -42,5 +42,10 @@ Description: for user sign up and login
 
 .register .error-msg{
     color: red;
+    padding-left: 5px;
 }
 
+.register .submit-error ul{
+    padding-left: 20px;
+    color: red;
+}

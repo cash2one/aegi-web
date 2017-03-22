@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^validateKit$',views.validateKit,name='validateKit'),
     url(r'^payment/alipay$', views.alipay, name='alipay'),
     url(r'^payment/wx$', views.wx, name='wx'),
+    url(r'^payment/wx/callback$', views.wxCallback, name='wxCallback'),
 ]
