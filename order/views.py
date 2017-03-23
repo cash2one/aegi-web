@@ -67,7 +67,7 @@ def cart(request):
     myForm = orderForm()
     return render(request, 'order/cart.html', {'myForm':myForm, 'languageCode':request.LANGUAGE_CODE})
 
-
+# 下单页面校验kitid
 def validateKit(request):
     price = 0
     status = 0
@@ -81,6 +81,21 @@ def validateKit(request):
     jsonData = {'status':status,'price':price}
     toJson = json.dumps(jsonData)
     return HttpResponse(toJson, content_type = "application/json")
+
+#轮询检查是否成功,因为失败后我们无法得知是哪个订单是失败的,需要去微信查询当前订单是否支付成功,暂时简单处理,支付成功跳转,支付失败不做任何处理
+def check_transaction(request):
+    status = 0  #failed or not paied
+    if request.method == 'POST' and 'trade_no' in request.POST:
+        trade_no = request.POST['trade_no'].strip()
+        transac = transactionModel.objects.filter(out_trade_no=trade_no)
+        if len(transac):
+            if transac[0].status == 1:
+                status = 1
+
+    jsonData = {'status':status}
+    toJson = json.dumps(jsonData)
+    return HttpResponse(toJson, content_type = "application/json")
+
 
 
 def alipay(request):
@@ -109,7 +124,6 @@ def wx(request):
 
             #get the total price
             total_fee = int(transac[0].price*100)
-            #total_fee = 1
 
             try:
                 raw = pay.unified_order(trade_type=trade_type, body=body, out_trade_no=trade_no, total_fee=total_fee, product_id=trade_no)
@@ -117,7 +131,7 @@ def wx(request):
                     if raw['result_code'] == 'SUCCESS':
                         prepay_id = raw['prepay_id']
                         code_url = raw['code_url']
-                        return render(request, 'order/wx.html',{'code_url':code_url})
+                        return render(request, 'order/wx.html',{'code_url':code_url,'languageCode':request.LANGUAGE_CODE,'trade_no':trade_no})
 
                     else:
                         message = u'微信统一下单发生错误，请更改支付方式或者联系我们!'
@@ -132,8 +146,7 @@ def wx(request):
             except WeixinPayError, e:
                 print e.message
 
-    #return HttpResponseRedirect("/order/cart")
-
+    return HttpResponseRedirect("/order/cart")
 
 #notify_url
 from util import *
@@ -147,9 +160,12 @@ def wxCallback(request):
         status = verifyNotice(weixinRes)
         if status == True:
             message = 'OK'
-
-
     return HttpResponse(reply(message,status))
+
+
+def paySuccess(request):
+    return render(request, 'order/paysuccess.html')
+
 
 def verifyNotice(weixinRes):
     if len(weixinRes):
@@ -168,12 +184,9 @@ def verifyNotice(weixinRes):
                     transac = transactionModel.objects.filter(out_trade_no=weixin_out_trade_no)
                     if len(transac):
                         total_fee = int(transac[0].price*100)
-                        print weixin_total_fee
-                        print total_fee
                         if weixin_total_fee == total_fee:    #the price is right
                             #update the database
                             transactionModel.objects.filter(out_trade_no=weixin_out_trade_no).update(status=1)
-
                             return True
 
             else:

@@ -9,9 +9,14 @@
     {% load static %}
     {% load qr_tags %}
     <link rel="stylesheet" href="{% static "order/order.css" %}?time={% now "YmdHi" %}">
+    <script src="{% static "order/wx.js" %}?time={% now "YmdHi" %}"></script>
     <div id="order">
         <div class="container">
             <div id="orderwrapper">
+                <input class="hide" id="languageCode" value={{ languageCode }}>
+                <input class="hide" id="trade_no" value={{ trade_no }}>
+                {% csrf_token %}
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="content payment wx">
@@ -19,7 +24,7 @@
                             <div class="row">
                                 <div class="col-sm-4 col-sm-offset-4">
                                     {% qr_from_text code_url 150 %}
-                                    <div class="description">请在2小时内使用微信扫描二维码以完成支付</div>
+                                    <div class="description">请在2小时内使用微信扫描二维码以完成支付，剩余支付时间：<span id="timeDiv"></span></div>
                                 </div>
                             </div>
                         </div>

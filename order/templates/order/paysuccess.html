@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 服务购买" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "order/order.css" %}?time={% now "YmdHi" %}">
+    <div id="order">
+        <div class="container">
+            <div id="orderwrapper">
+                <div class="title">
+                    支付成功
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content order-success">
+                            您已经支付成功，如果您还未拿到产品套件，我们会尽快给您发货。如果您已经取得套件，请注册登录官网并绑定套件。
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
