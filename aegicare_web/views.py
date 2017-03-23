@@ -28,7 +28,7 @@ def HomePage(request):
         res = latest_news[0:2]
     else:
         res = latest_news
-    return render(request, 'home.html',{'news':res})
+    return render(request, 'home.html',{'news':res,'languageCode':request.LANGUAGE_CODE})
 
 def About(request):
     all_news = news.objects.all()

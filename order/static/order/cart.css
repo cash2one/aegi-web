@@ -1,17 +1,23 @@
 ﻿/*收货信息*/
 .mainbox {
-    width: 60%;
     background-color: white;
-    margin-left: 20%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid #dddddd;
     border-radius: 5px;
     padding: 20px 2%;
 }
 
+.align-label{
+    padding-top: 7px;
+}
+
 .firstbox {
     margin-top: 100px;
+}
+
+.lastbox{
+    margin-bottom: 50px;
 }
 
 .toptitle {
@@ -120,6 +126,10 @@
     border: none;
 }
 
+#shopping-cart input#id_number{
+    padding-left: 10px;
+}
+
 #totalbox {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -152,14 +162,16 @@
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px){
+    .brief-price{
+        text-align: right;
+        margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 414px) {
     .mainbox {
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        padding: 10px 2%;
+        padding: 20px 15px ;
     }
 
     .toptitle {

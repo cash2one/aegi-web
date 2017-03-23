@@ -18,6 +18,7 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{% static "js/base.js" %}?time={% now "YmdHi" %}"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
@@ -54,8 +55,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav" id="mainnav">
-                <li><a href="{% url "about" %}">{% trans "关于我们" %}</a></li>
-                <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">{% trans "产品介绍" %}
+                <li><a id="about-nav" href="{% url "about" %}">{% trans "关于我们" %}</a></li>
+                <li><a id="service-nav" class="dropdown-toggle" data-toggle="dropdown" href="#">{% trans "产品介绍" %}
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url "geneticInfo" %}">遗传病全谱基因检测</a></li>
@@ -64,8 +65,8 @@
                     </ul>
                 </li>
 
-                <li><a href="{% url "workflow" %}">{% trans "服务流程" %}</a></li>
-                <li><a href="{% url "order:order" %}">{% trans "在线购买" %}</a></li>
+                <li><a id="workflow-nav" href="{% url "workflow" %}">{% trans "服务流程" %}</a></li>
+                <li><a id="order-nav" href="{% url "order:order" %}">{% trans "在线购买" %}</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -99,85 +100,83 @@
 <footer class="footer-distributed">
 
     <div class="container">
-        <div class="footer-left">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 footer-left">
             <span class="footer-company-about">
                 <h3>AEGICARE</h3>
                 安吉康尔是一家致力于建立基于基因大数据的精准医疗智能平台，推动包括癌症在内的人类基因疾病研究的公司
             </span>
 
-            <div class="footer-icons">
+                <div class="footer-icons">
 
-                <a href="#" title="分享到微信"><i class="fa fa-wechat"></i></a>
-                <a href="#" title="分享到新浪微博"><i class="fa fa-weibo"></i></a>
-                <a href="#" title="分享到facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" title="分享到领英"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" title="分享到微信"><i class="fa fa-wechat"></i></a>
+                    <a href="#" title="分享到新浪微博"><i class="fa fa-weibo"></i></a>
+                    <a href="#" title="分享到facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" title="分享到领英"><i class="fa fa-linkedin"></i></a>
+                </div>
 
             </div>
 
-        </div>
+            <div class="col-md-2 col-sm-3 col-xs-12 footer-center">
 
-        <div class="footer-center">
+                <p class="footer-company-about">
+                    <span>帮助中心</span>
+                </p>
 
-            <p class="footer-company-about">
-                <span>帮助中心</span>
-            </p>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="{% url "order:order" %}">服务购买</a></li>
+                        <li><a href="{% url "report" %}">报告解读</a></li>
+                        <li><a href="{% url "privacy" %}">隐私安全</a></li>
+                        <li><a href="{% url "terms" %}">服务协议</a></li>
+                    </ul>
+                </div>
+            </div>
 
-            <div class="footer-links">
-                <ul>
-                    <li><a href="{% url "order:order" %}">服务购买</a></li>
-                    <li><a href="{% url "report" %}">报告解读</a></li>
-                    <li><a href="{% url "privacy" %}">隐私安全</a></li>
-                    <li><a href="{% url "terms" %}">服务协议</a></li>
-                </ul>
+            <div class="col-md-2 col-sm-3 col-xs-12 footer-center">
+
+                <p class="footer-company-about">
+                    <span>关于我们</span>
+                </p>
+
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="{% url "mission" %}">公司愿景</a></li>
+                        <li><a href="{% url "news:index" %}">媒体新闻</a></li>
+                        <li><a href="{% url "team" %}">团队介绍</a></li>
+                        <li><a href="{% url "career" %}">加入我们</a></li>
+                    </ul>
+                </div>
             </div>
 
 
-        </div>
-
-        <div class="footer-center">
-
-            <p class="footer-company-about">
-                <span>关于我们</span>
-            </p>
-
-            <div class="footer-links">
-                <ul>
-                    <li><a href="{% url "mission" %}">公司愿景</a></li>
-                    <li><a href="{% url "news:index" %}">媒体新闻</a></li>
-                    <li><a href="{% url "team" %}">团队介绍</a></li>
-                    <li><a href="{% url "career" %}">加入我们</a></li>
-                </ul>
+            <div class="col-md-2 col-sm-2 col-xs-12 footer-center">
+                <p class="footer-company-about">
+                    <span>微信公众号</span>
+                </p>
+                <div class="footer-links">
+                    <ul>
+                        <img src="{% static "img/wechat.jpg" %}" height="80px" width="80px">
+                    </ul>
+                </div>
             </div>
 
+            <div class="col-md-3 col-sm-4 col-xs-12 footer-right">
 
-        </div>
+                <p class="footer-company-about">
+                    <span>联系我们</span>
+                </p>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>0755-33201903(深圳)</p>
+                </div>
 
-        <div class="footer-center">
-            <p class="footer-company-about">
-                <span>微信公众号</span>
-            </p>
-            <div class="footer-links">
-                <ul>
-                    <img src="{% static "img/wechat.jpg" %}" height="80px" width="80px">
-                </ul>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@aegicare.com">info@aegicare.com</a></p>
+                </div>
+
             </div>
-        </div>
-
-        <div class="footer-right">
-
-            <p class="footer-company-about">
-                <span>联系我们</span>
-            </p>
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>0755-33201903(深圳)</p>
-            </div>
-
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:info@aegicare.com">info@aegicare.com</a></p>
-            </div>
-
         </div>
 
         <div id="returnTop">
@@ -186,18 +185,25 @@
 
         <hr/>
 
+        <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-9">
+
         <span class="copyright">
             Copyright © 安吉康尔(深圳)科技有限公司 版权所有 深ICP备xxxxxxxx号
         </span>
+            </div>
 
+            <div class="col-md-3 col-sm-3 col-xs-3">
         <span id="language" class="text-right">
-            <a href="/" class="active"><img
+            <a id="zh_cn" href="/" class="active"><img
                     src="{% static "img/china.png" %}" width="16"> <b
                     class="hidden-xs">中文</b></a>
-            <a href="/en"><img
+            <a id="en" href="/en"><img
                     src="{% static "img/usa.png" %}" width="16"> <b class="hidden-xs">English</b></a>
 					</span>
+            </div>
 
+        </div>
     </div>
 </footer>
 

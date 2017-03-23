@@ -131,7 +131,7 @@ def wx(request):
                     if raw['result_code'] == 'SUCCESS':
                         prepay_id = raw['prepay_id']
                         code_url = raw['code_url']
-                        return render(request, 'order/wx.html',{'code_url':code_url,'languageCode':request.LANGUAGE_CODE,'trade_no':trade_no})
+                        return render(request, 'order/wx.html',{'code_url':code_url,'trade_no':trade_no})
 
                     else:
                         message = u'微信统一下单发生错误，请更改支付方式或者联系我们!'

@@ -20,7 +20,6 @@ img#logo {
 
 #language a {
     opacity: 0.2;
-    color: white;
     color: #999e9e;
     text-decoration: none;
 }
@@ -70,6 +69,11 @@ img#logo {
     line-height: 20px;
 }
 
+#mainnav a.active {
+    color: #1BA8B7;
+    font-weight: bold;
+}
+
 .navbar-right {
     margin-right: 0px;
 }
@@ -89,13 +93,25 @@ img#logo {
     margin-right: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
+    #mainnav {
+        margin-left: 10px;
+    }
+
+    #mainnav > li > a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
     .login div a:nth-child(1) {
         margin-left: 20px;
     }
 
     #mainnav {
         margin-left: 10px;
+        margin-bottom: 0px;
     }
 
     #mainnav > li > a {
@@ -112,4 +128,33 @@ img#logo {
     img#logo {
         height: 50px;
     }
+
+    .login div {
+        padding: 8px 20px 5px 20px;
+        margin-top: 0px;
+        background-color: white;
+        border-radius: 5px;
+        color: #777;
+    }
+
+    .login div a {
+        color: #777;
+        text-decoration: none;
+    }
+
+    .login div a:hover {
+        color: #1BA8B7;
+        text-decoration: none;
+    }
+
+    .navbar-right{
+        margin-top: 0px;
+        line-height: 10px;
+    }
+
+    #mainnav .dropdown-menu>li>a{
+        padding: 0px 0px 0px 10px ;
+
+    }
+
 }

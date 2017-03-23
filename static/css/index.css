@@ -96,7 +96,7 @@ Description: for Aegicare home page
 }
 
 #genetic-home img, #cancer-home img {
-    width: 200px;
+    width: 160px;
 }
 
 #cooperation {
@@ -107,8 +107,8 @@ Description: for Aegicare home page
     height: 50px;
 }
 
-#cooperation .rowitem {
-    margin-top: 40px;
+#cooperation .rowitem > div {
+    margin-bottom: 30px;
 }
 
 #cooperation {
@@ -504,13 +504,20 @@ Description: for Aegicare home page
     border: none;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
+    #home #news .title {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
     #genetic-home .service-title, #cancer-home .service-title {
         font-size: 130%;
     }
 
     #home #news .title {
-        font-size: 95%;
+        font-size: 100%;
+        margin-top: 10px;
     }
 
     .section-title {
@@ -592,6 +599,9 @@ Description: for Aegicare home page
         margin-top: 10px;
     }
 
+    #cooperation .rowitem > div {
+        margin-bottom: 15px;
+    }
 }
 
 

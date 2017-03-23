@@ -111,13 +111,13 @@
                             <div class="service-title">遗传病全谱基因检测</div>
                             <div class="service-content">
                                 <div class="row">
-                                    <div class="col-md-7 intro">
+                                    <div class="col-md-8 col-sm-8 col-xs-12 intro">
                                         <p>
                                             通过一次检测覆盖人类所有22,000多个基因、180,000多个外显子和6,000多万个位点的全外显子组测序在临床应用中具有简便、经济、高效的特点，同时由于其对目标区域的覆盖度更高，有利于基因变异的检出，提高遗传疾病的诊断率。</p>
                                         <p>安吉康尔的高精度全自动的遗传病全外显子组测序数据分析系统和智能解读系统，为患者带来最精准，最快速，最经济，最权威的检测服务。</p>
                                     </div>
 
-                                    <div class="col-md-4 col-md-offset-1">
+                                    <div class="col-md-3 col-sm-3 col-sm-offset-1 l-md-offset-1 col-xs-12">
                                         <img src="{% static "img/genetic.png" %}">
                                     </div>
                                 </div>
@@ -137,14 +137,14 @@
                             <div class="service-title">肿瘤防治与精准医学</div>
                             <div class="service-content">
                                 <div class="row">
-                                    <div class="col-md-7 intro">
+                                    <div class="col-md-8 col-sm-8 intro">
                                         <p>
                                             肿瘤是一种复杂的基因病，随着检测技术的更新迭代，对肿瘤的驱动基因、致病基因以及耐药基因的研究越来越深入，更多的基因被发现与肿瘤治疗药物的治疗效果密切相关。</p>
                                         <p>
                                             安吉康尔依托最先进的高通量测序平台、国际领先的基因组数据分析算法，为癌症患者和医生提供精准决策辅助，可应用于肺癌、胃癌、结直肠癌、乳腺癌等实体瘤检测。</p>
                                     </div>
 
-                                    <div class="col-md-4 col-md-offset-1">
+                                    <div class="col-md-3 col-sm-3 col-sm-offset-1 col-md-offset-1">
                                         <img src="{% static "img/cancer.png" %}">
                                     </div>
                                 </div>
@@ -167,14 +167,12 @@
 
                                 {% for newsItem in news %}
                                     <div class="newItem" id="{{ forloop.counter }}">
-
-
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
                                             <div class="row">
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-sm-3 col-xs-12">
                                                     <img src="{% static "img/new1.png" %}">
                                                 </div>
-                                                <div class="col-md-8">
+                                                <div class="col-md-8 col-sm-8 col-xs-12">
                                                     <div class="title">
                                                         <a href="{% url 'news:detail' id=newsItem.newsId %}"><span
                                                                 class="title">{{ newsItem.title }}</span></a>
@@ -211,37 +209,33 @@
                         <div class="section-content">
 
                             <div class="row rowitem">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/pku.png" %}">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/beijing.jpg" %}">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/tongji.png" %}">
                                 </div>
-                            </div>
 
-                            <div class="row rowitem">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/mayo.jpg" %}">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/cmu.png" %}">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/uiuc.png" %}">
                                 </div>
-                            </div>
 
-                            <div class="row rowitem">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/zhejiang.png" %}">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/301.png" %}">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <img src="{% static "img/south.png" %}">
                                 </div>
                             </div>
