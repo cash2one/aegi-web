@@ -91,35 +91,34 @@
     background: url(/static/order/selected-icon.png) no-repeat;
 }
 
-#shopping-cart .kit_id a{
+#shopping-cart .kit_id a {
     background-color: #1BA8B7;
     border: none;
 }
 
-#shopping-cart .kit_id .kit_notice{
+#shopping-cart .kit_id .kit_notice {
     margin-top: 10px;
     color: grey;
 }
 
-#shopping-cart #warning .warning-body{
+#shopping-cart #warning .warning-body {
     text-align: center;
     height: 200px;
 }
 
-#shopping-cart #warning .warning-body #message{
+#shopping-cart #warning .warning-body #message {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#shopping-cart #warning .warning-body img{
+#shopping-cart #warning .warning-body img {
     width: 40px;
 }
 
-#shopping-cart #warning .warning-body button{
+#shopping-cart #warning .warning-body button {
     background-color: #1BA8B7;
     border: none;
 }
-
 
 #totalbox {
     padding-top: 30px;
@@ -153,205 +152,33 @@
     margin-bottom: 10px;
 }
 
-/*.addressone {*/
-/*width: 100%;*/
-/*height: 0px;*/
-/*background-color: #008000;*/
-/*font-size: 15px;*/
-/*}*/
+@media (max-width: 414px) {
+    .mainbox {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        padding: 10px 2%;
+    }
 
-/*.paynumber {*/
-/*margin-top: -6px;*/
-/*}*/
+    .toptitle {
+        padding-bottom: 10px;
+    }
 
-/*.form-control {*/
-/*padding: 6px;*/
-/*border-color: #e6e6e6;*/
-/*width: 80%;*/
-/*background-color: #fff;*/
-/*border: 1px solid #ccc;*/
-/*margin-left: 16%;*/
-/*margin-top: -8px;*/
-/*}*/
+    #toptitle {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
 
-/*.payaddress dl {*/
-/*padding-top: 20px;*/
-/*color: #666;*/
-/*margin-top: 30px;*/
-/*}*/
+    #btn-lg {
+        padding: 3px 8px;
+        font-size: 16px;
+    }
 
-/*.payaddresser dl {*/
-/*padding-top: 15px;*/
-/*color: #666;*/
-/*}*/
+    .firstbox {
+        margin-top: 80px;
+    }
 
-/*.paypic {*/
-/*margin-left: 10%;*/
-/*}*/
-
-/*.paytp {*/
-/*margin-top: -10px;*/
-/*margin-left: 21%;*/
-/*}*/
-
-/*!*支付信息*!*/
-/*.payer {*/
-/*width: 50%;*/
-/*height: 450px;*/
-/*background-color: white;*/
-/*margin-left: 25%;*/
-/*margin-top: 80px;*/
-/*}*/
-
-/*.payaddresser {*/
-/*width: 80%;*/
-/*height: 280px;*/
-/*background-color: white;*/
-/*margin-left: 10%;*/
-/*}*/
-
-/*.payway {*/
-/*margin-top: 30px;*/
-/*}*/
-
-/*.distance {*/
-/*padding-right: 20px;*/
-/*}*/
-
-/*.usepromo {*/
-/*margin-left: 16%;*/
-/*}*/
-
-/*.promodiv {*/
-/*margin-left: 10%;*/
-/*list-style: none;*/
-/*}*/
-
-/*.promodivan {*/
-/*margin-left: 52%;*/
-/*background-color: #4fb1f7;*/
-/*padding: 8px 12px;*/
-/*}*/
-
-/*.promodiv a {*/
-/*text-decoration: none;*/
-/*color: #4fb1f7;*/
-/*cursor: pointer;*/
-/*}*/
-
-/*.promodiv a:hover {*/
-/*color: #74CAF0;*/
-/*}*/
-
-/*.promotext {*/
-/*width: 50%;*/
-/*margin-left: -1%;*/
-/*margin-top: 10px;*/
-/*}*/
-
-/*.querendiv :hover {*/
-/*background-color: #74CAF0;*/
-/*}*/
-
-/*.querendiv {*/
-/*width: 30%;*/
-/*margin-top: -27px;*/
-/*margin-left: 34%;*/
-/*}*/
-
-/*!*总计*!*/
-/*.totalbox {*/
-/*width: 60%;*/
-/*height: 100px;*/
-/*background-color: white;*/
-/*margin-left: 20%;*/
-/*margin-top: 80px;*/
-/*margin-bottom: 40px;*/
-/*}*/
-
-/*.total {*/
-/*width: 80%;*/
-/*height: 100px;*/
-/*background-color:white;*/
-/*margin-left: 10%;*/
-/*}*/
-
-/*.totaldi {*/
-/*width: 50%;*/
-/*height: 100px;*/
-/*background-color:white;*/
-/*float: left;*/
-/*margin-left: 4%;*/
-/*}*/
-
-/*.totalprice {*/
-/*line-height: 60px;*/
-/*}*/
-
-/*.price {*/
-/*font-size: 20px;*/
-/*vertical-align: -40px;*/
-/*margin-left: -10%;*/
-/*color: #4fb1f7;*/
-/*}*/
-
-/*.refer {*/
-/*background-color: #4fb1f7;*/
-/*padding: 12px 24px;*/
-/*margin-left: 6%;*/
-/*}*/
-
-/*.billradio {*/
-/*margin-left: 16%;*/
-/*}*/
-
-/*.danprice {*/
-/*margin-left: 16%;*/
-/*}*/
-
-/*.mui-btn {*/
-/*font-size: 16px;*/
-/*margin: -2px;*/
-/*margin-left: 10%;*/
-/*padding: 4px;*/
-/*}*/
-
-/*.mui-btn-numbox-minus {*/
-/*width: 6%;*/
-/*height: 33px;*/
-/*border: 1px solid #e6e6e6;*/
-/*margin-left: 16%;*/
-/*}*/
-
-/*.mui-btn-numbox-plus {*/
-/*width: 6%;*/
-/*height: 33px;*/
-/*margin-left: -6px;*/
-/*border: 1px solid #e6e6e6;*/
-/*}*/
-
-/*.mui-input-numbox {*/
-/*width: 11%;*/
-/*height: 34px;*/
-/*margin-left: -3px;*/
-/*border: 2px solid #e6e6e6;*/
-/*text-align: center;*/
-/*}*/
-
-/*.region {*/
-/*margin-left: 16%;*/
-/*}*/
-
-/*.row {*/
-/*color: #666;*/
-/*font-size: 16px;*/
-/*}*/
-
-/*input:focus {*/
-/*border-style: solid;*/
-/*border-color: #4fb1f7;*/
-/*}*/
-
-/*.price a:hover {*/
-/*background-color: #74CAF0;*/
-/*}*/
+}

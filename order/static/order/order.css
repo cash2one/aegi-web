@@ -3,11 +3,11 @@ Author: Frank
 Time: 2017/02/25
 Function: for css
 */
-#order{
+#order {
     margin-top: 80px;
 }
 
-#order #orderwrapper{
+#order #orderwrapper {
     background-color: white;
     min-height: 600px;
     padding: 40px;
@@ -19,48 +19,64 @@ Function: for css
     text-align: center;
 }
 
-#order .details{
+#order .details {
     margin-top: 50px;
     text-align: center;
 }
 
-#order .productInfo{
+#order .productInfo {
     text-align: center;
     margin: 20px 0;
 }
 
-#order .price{
+#order .price {
     font-size: 200%;
-    color:#1ba8b7;
+    color: #1ba8b7;
     text-align: center;
 }
 
-#order .buy{
+#order .buy {
     text-align: center;
     margin: 30px 0;
 }
 
-#order .buybtn a{
+#order .buybtn a {
     background-color: #1BA8B7;
     border: none;
 }
 
-#order .payment{
+#order .payment {
     text-align: center;
 }
 
-#order .payment .description{
+#order .payment .description {
     margin: 20px 0;
     font-size: 120%;
 }
 
 /*error page*/
-#order .order-error{
+#order .order-error {
     margin-top: 20px;
     color: red;
     text-align: center;
 }
 
-#order .wx > img{
+#order .wx > img {
     margin-bottom: 30px;
+}
+
+@media (max-width: 414px) {
+    #order .title {
+        font-size: 140%;
+        padding: 15px auto;
+    }
+
+    #order #orderwrapper {
+        padding: 20px;
+        min-height: 300px;
+    }
+
+    #order .buy {
+        margin: 10px 0;
+    }
 }

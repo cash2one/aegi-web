@@ -3,6 +3,35 @@ Author: Frank
 Time: 20170225
 Description: for career page
 */
+@media (max-width: 414px) {
+    #container {
+        margin-left: 0px !important;
+        margin: 0px auto;
+    }
+
+    #career .careerwrapper {
+        padding: 20px 20px;
+    }
+
+    #career .careerwrapper .title {
+        font-size: 150%;
+        margin-bottom: 10px;
+    }
+
+    #career .careerwrapper #slogan {
+        font-size: 120%;
+        margin-bottom: 5px;
+    }
+
+    #career #address, #career #address a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #career .careerwrapper .job-title .name {
+        font-size: 120%;
+    }
+}
 
 #career {
     margin-top: 80px;
@@ -27,7 +56,7 @@ Description: for career page
 
 }
 
-#career .careerwrapper .job-title .name{
+#career .careerwrapper .job-title .name {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 140%;
@@ -36,7 +65,7 @@ Description: for career page
     color: #1BA8B7;
 }
 
-#career .careerwrapper .job-title .des{
+#career .careerwrapper .job-title .des {
     font-size: 100%;
     color: #888888;
 
@@ -52,11 +81,11 @@ Description: for career page
     line-height: 180%;
 }
 
-#career .careerwrapper .job-description{
+#career .careerwrapper .job-description {
     margin-bottom: 40px;
 }
 
-#career .address, #career .address a{
+#career .address, #career .address a {
     background-color: #1BA8B7;
     color: white;
     font-size: 120%;

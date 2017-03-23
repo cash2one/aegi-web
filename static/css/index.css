@@ -4,7 +4,7 @@ Author: Frank
 Description: for Aegicare home page
 */
 
-#topcarousel .btn{
+#topcarousel .btn {
     background-color: #1BA8B7;
     border: none;
 }
@@ -95,7 +95,7 @@ Description: for Aegicare home page
     line-height: 1.6;
 }
 
-#genetic-home img ,#cancer-home img{
+#genetic-home img, #cancer-home img {
     width: 200px;
 }
 
@@ -109,7 +109,6 @@ Description: for Aegicare home page
 
 #cooperation .rowitem {
     margin-top: 40px;
-    text-align: center;
 }
 
 #cooperation {
@@ -300,11 +299,11 @@ Description: for Aegicare home page
 }
 
 /*#terms .content #image {*/
-    /*text-align: center;*/
+/*text-align: center;*/
 /*}*/
 
 /*#terms .content img {*/
-    /*width: 60%;*/
+/*width: 60%;*/
 /*}*/
 
 #terms .details {
@@ -496,13 +495,103 @@ Description: for Aegicare home page
     margin-top: 20px;
 }
 
-#genetic .buywrapper{
+#genetic .buywrapper {
     text-align: center;
 }
 
-#genetic .geneticbuy{
+#genetic .geneticbuy {
     background-color: #1BA8B7;
     border: none;
+}
+
+@media (max-width: 414px) {
+    #genetic-home .service-title, #cancer-home .service-title {
+        font-size: 130%;
+    }
+
+    #home #news .title {
+        font-size: 95%;
+    }
+
+    .section-title {
+        font-size: 140%;
+        margin-bottom: 10px;
+    }
+
+    #home #news .more {
+        margin-top: 20px;
+    }
+
+    #about .aboutitem > .title {
+        font-size: 150%;
+    }
+
+    #privacy .content {
+        padding: 10px;
+    }
+
+    #privacy .privacyitems {
+        padding: 10px;
+    }
+
+    #privacy #privacywrapper {
+        padding: 20px;
+    }
+
+    #mission .content {
+        padding: 20px;
+        line-height: 1.8;
+    }
+
+    #mission .title {
+        margin-top: 20px;
+    }
+
+    #cdss #cdsswrapper {
+        padding: 20px;
+    }
+
+    #cdss .first {
+        padding: 20px 40px 0 40px;
+    }
+
+    #about .aboutitem {
+        padding: 20px 20px;
+        line-height: 150%;
+    }
+
+    #genetic #geneticwrapper {
+        padding: 20px 20px;
+        min-height: 600px;
+    }
+
+    #genetic .title {
+        font-size: 150%;
+    }
+
+    #genetic-home img, #cancer-home img {
+        width: 150px;
+    }
+
+    #terms #termswrapper {
+        padding: 20px 20px;
+        line-height: 2;
+    }
+
+    #terms .title {
+        font-size: 150%;
+        margin-bottom: 10px;
+    }
+
+    #btn-lg-genetic {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    #genetic .content {
+        margin-top: 10px;
+    }
+
 }
 
 

@@ -9,7 +9,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static "css/career.css" %}?time={% now "YmdHi" %}">
     <div id="career">
-        <div class="container">
+        <div class="container" id="container">
             <img id="topimg" src="{% static "img/career.jpg" %}">
 
             <div class="careerwrapper">
@@ -35,7 +35,7 @@
 
             </div>
 
-            <div class="address">
+            <div class="address" id="address">
                 发送简历到: <a href="mailto:hr@aegicare.com">hr@aegicare.com</a>
             </div>
 
@@ -47,15 +47,15 @@
 
                     </div>
                     <div class="col-md-8 job-description">
-                        <h4>岗位职责：</h4>
+                        <h5>岗位职责：</h5>
                         1. 生物信息学计算Pipeline研发和维护<br>
                         2. 临床测序数据注释解读系统研发<br>
-                        <h4>任职要求：</h4>
+                        <h5>任职要求：</h5>
                         1. 熟悉第二代测序数据范式，熟悉主流数据分析软件原理和使用，包括但不限于bwa，Picard和GATK<br>
                         2. 精通Python（包括numpy, scipy, pandas, IPython/Jupyter以及Django）<br>
                         3. 熟悉R<br>
                         4. 熟练使用git<br>
-                        <h4>锦上添花：</h4>
+                        <h5>锦上添花：</h5>
                         1. IF>4期刊上发表过生物信息学算法软件<br>
                         2. 有C++/Java开发经验<br>
                         3. 有SQL/NoSQL数据库使用经验<br>
