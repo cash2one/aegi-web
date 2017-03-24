@@ -3,35 +3,6 @@ Author: Frank
 Time: 20170225
 Description: for career page
 */
-@media (max-width: 414px) {
-    #container {
-        margin-left: 0px !important;
-        margin: 0px auto;
-    }
-
-    #career .careerwrapper {
-        padding: 20px 20px;
-    }
-
-    #career .careerwrapper .title {
-        font-size: 150%;
-        margin-bottom: 10px;
-    }
-
-    #career .careerwrapper #slogan {
-        font-size: 120%;
-        margin-bottom: 5px;
-    }
-
-    #career #address, #career #address a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    #career .careerwrapper .job-title .name {
-        font-size: 120%;
-    }
-}
 
 #career {
     margin-top: 80px;
@@ -94,3 +65,31 @@ Description: for career page
     padding-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    #career .careerwrapper {
+        padding: 20px 30px;
+    }
+
+    #career .careerwrapper .title {
+        font-size: 150%;
+        margin-bottom: 10px;
+    }
+
+    #career .careerwrapper #slogan {
+        font-size: 120%;
+        margin-bottom: 5px;
+    }
+
+    #career #address, #career #address a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #career .careerwrapper .job-title .name {
+        font-size: 120%;
+    }
+
+    #career .careerwrapper h4{
+        font-size: 110%;
+    }
+}

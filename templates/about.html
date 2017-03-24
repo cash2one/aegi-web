@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-
 {% block title %}
     {% load i18n %}
     <title>{% trans "安吉康尔 | 关于我们" %}</title>
@@ -9,6 +8,7 @@
 {% block content %}
     {% load static %}
     <link rel="stylesheet" href="{% static "css/index.css" %}?time={% now "YmdHi" %}">
+
     <div id="about">
         <div class="content">
             <div class="container">
@@ -17,7 +17,7 @@
                         <img src="{% static "img/about-us1.jpg" %}">
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
 
                             <div class="aboutitem">
                                 <div class="title">
@@ -42,11 +42,11 @@
                                     {% for newsItem in news %}
                                         <div class="newItem" id="{{ forloop.counter }}">
                                             <div class="row">
-                                                <div class="col-md-6 col-md-offset-1 newsTitle">
+                                                <div class="col-md-7 col-md-offset-1 newsTitle col-sm-8 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                                                     <a href="{% url 'news:detail' id=newsItem.newsId %}"><span
                                                             class="title">{{ newsItem.title }}</span></a>
                                                 </div>
-                                                <div class="col-md-2 newsTime">
+                                                <div class="col-md-2 col-sm-2 col-xs-12 newsTime">
                                                     <span class="time">{{ newsItem.time|date:"Y-m-d" }} </span>
                                                 </div>
                                             </div>
@@ -62,10 +62,10 @@
                                 <div class="content">
                                     <div class="team">
                                         <div class="row teamitem">
-                                            <div class="col-md-2">
-                                                <img src="{% static "img/liyang.jpg" %}" width="100px">
+                                            <div class="col-md-2 col-sm-3">
+                                                <img src="{% static "img/liyang.jpg" %}">
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="col-md-9 col-sm-9">
                                                 <div class="name">
                                                     李阳 CEO
                                                 </div>
@@ -78,10 +78,10 @@
                                         </div>
 
                                         <div class="row teamitem">
-                                            <div class="col-md-2">
-                                                <img src="{% static "img/liuyang.jpg" %}" width="100px">
+                                            <div class="col-md-2 col-sm-3">
+                                                <img src="{% static "img/liuyang.jpg" %}">
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="col-md-9 col-sm-9">
                                                 <div class="name">
                                                     刘阳 CTO
                                                 </div>
@@ -94,10 +94,10 @@
                                         </div>
 
                                         <div class="row teamitem">
-                                            <div class="col-md-2">
-                                                <img src="{% static "img/lvpeitao.jpg" %}" width="100px">
+                                            <div class="col-md-2 col-sm-3">
+                                                <img src="{% static "img/lvpeitao.jpg" %}">
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="col-md-9 col-sm-9">
                                                 <div class="name">
                                                     吕佩涛 COO
 
@@ -109,10 +109,10 @@
                                         </div>
 
                                         <div class="row teamitem">
-                                            <div class="col-md-2">
-                                                <img src="{% static "img/zhangyang.jpg" %}" width="100px">
+                                            <div class="col-md-2 col-sm-3">
+                                                <img src="{% static "img/zhangyang.jpg" %}">
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="col-md-9 col-sm-9">
                                                 <div class="name">
                                                     张洋 生物信息总监
                                                 </div>
@@ -131,11 +131,18 @@
                                     <a href="{% url "career" %}">加入我们</a>
                                 </div>
                                 <div class="content">
-                                    <h4>安吉康尔(深圳)科技有限公司</h4><br><br>
-
-                                    公司电话：0755-33201903(深圳)<br>
-                                    人员招聘：<a href="mailto:hr@aegicare.com">hr@aegicare.com</a><br>
-                                    科研合作：<a href="mailto:research@aegicare.com">research@aegicare.com</a><br>
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-8 col-xs-12">
+                                            <h4>安吉康尔(深圳)科技有限公司</h4><br>
+                                            公司地址：南山区科技园南区粤兴五道9号北理工创新大厦3层A单元<br>
+                                            公司电话：0755-33201903(深圳)<br>
+                                            人员招聘：<a href="mailto:hr@aegicare.com">hr@aegicare.com</a><br>
+                                            科研合作：<a href="mailto:research@aegicare.com">research@aegicare.com</a><br>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div id="dituContent"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 

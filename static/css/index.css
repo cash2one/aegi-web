@@ -142,6 +142,10 @@ Description: for Aegicare home page
 
 }
 
+#about .aboutitem .teamitem img {
+    width: 100px;
+}
+
 #about .aboutitem > .title a {
     color: black;
 }
@@ -153,7 +157,6 @@ Description: for Aegicare home page
 
 #about .aboutitem .newscontent {
     font-size: 14px;
-    padding-left: 30px;
     margin-top: 10px;
 }
 
@@ -508,6 +511,49 @@ Description: for Aegicare home page
     #home #news .title {
         margin-top: 10px;
     }
+
+    #workflow #workflowwrapper {
+        padding: 20px;
+    }
+
+    #workflow #workflowwrapper > .title {
+        font-size: 140%;
+    }
+
+    #workflow .content {
+        padding: 20px;
+    }
+
+    #workflow .image img {
+        width: 60px;
+        margin-top: 10px;
+    }
+
+    #workflow .step {
+        padding: 20px 0px;
+    }
+
+    #about .aboutitem .newscontent .newsTime {
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    #about .aboutitem .teamitem .name {
+        margin-top: 10px;
+    }
+
+    #report #reportwrapper {
+        padding: 40px 10px;
+    }
+
+    #report .title {
+        font-size: 140%;
+    }
+
+    #report .content {
+        padding: 20px 10px;
+    }
+
 }
 
 @media (max-width: 500px) {

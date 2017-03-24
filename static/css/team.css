@@ -382,5 +382,17 @@ Description: for team page
     font-style: italic;
 }
 
+@media (max-width: 768px) {
+
+    #team .address, #team .address a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #team .teamwrapper{
+        padding: 30px 30px;
+    }
+}
+
 
 
