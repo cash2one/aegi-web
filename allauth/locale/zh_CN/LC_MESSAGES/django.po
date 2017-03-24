@@ -84,7 +84,7 @@ msgstr "用户名"
 
 #: allauth/account/forms.py:114
 msgid "Username or e-mail"
-msgstr "用户名或e-mail"
+msgstr "用户名或邮箱"
 
 #: allauth/account/forms.py:117
 msgctxt "field label"

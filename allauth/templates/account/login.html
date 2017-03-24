@@ -1,46 +1,96 @@
 {% extends "account/base.html" %}
-
 {% load i18n %}
 {% load account socialaccount %}
-
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block title %}
+    <title>{% trans "安吉康尔 | 用户登录" %}</title>
+{% endblock %}
 
 {% block content %}
+    {% load static %}
+    {% get_providers as socialaccount_providers %}
 
-<h1>{% trans "Sign In" %}</h1>
+    <link rel="stylesheet" href="{% static "css/account.css" %}?time={% now "YmdHi" %}">
+    <div class="container">
+        <div id="login">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <div class="header">登录安吉康尔</div>
 
-{% get_providers as socialaccount_providers %}
+                    <form class="loginForm" method="POST" action="{% url 'account_login' %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                {{ form.login }}
+                            </div>
+                        </div>
 
-{% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
-of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+                        <div class="submit-error">
+                            {{ form.login.errors }}
+                        </div>
 
-<div class="socialaccount_ballot">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                {{ form.password }}
+                            </div>
+                        </div>
 
-  <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-  </ul>
+                        <div class="submit-error">
+                            {{ form.password.errors }}
+                        </div>
 
-  <div class="login-or">{% trans 'or' %}</div>
+                        <div class="form-group">
+                            <div class="col-md-4 col-sm-4">
+                                <label for="id_remember">记住我:</label>
+                                {{ form.remember }}
+                            </div>
 
-</div>
+                            <div class="col-md-8 col-sm-8 reset">
+                                <a href="{% url 'account_reset_password' %}">找回密码</a> | <a
+                                    href="{{ signup_url }}">注册新用户</a>
+                            </div>
 
-{% include "socialaccount/snippets/login_extra.html" %}
+                        </div>
 
-{% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-{% endif %}
+                        {% if redirect_field_value %}
+                            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                        {% endif %}
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
+                        <div class="form-group submit-button">
+                            <div class="col-sm-4 col-md-4">
+                                <button class="btn btn-info" type="submit">{% trans "Sign In" %}</button>
+                            </div>
+                            {% if socialaccount_providers %}
+                                <div class="col-md-8 col-sm-8 otherlogin">
+                                    <div class="login-icons">
+                                        <span>其他账号</span>
+                                        <a title="微博登录" class="socialaccount_provider weibo"
+                                           href="/zh-cn/accounts/weibo/login/?process=login"><i class="fa fa-weibo"></i></a>
+                                        <a title="微信登录" class="socialaccount_provider weixin"
+                                           href="/zh-cn/accounts/weixin/login/?process=login"><i
+                                                class="fa fa-wechat"></i></a>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        </div>
+
+
+                    </form>
+
+                    {#                    {% if socialaccount_providers %}#}
+                    {#                        <div class="socialaccount_ballot">#}
+                    {#                            <ul class="socialaccount_providers">#}
+                    {#                                {% include "socialaccount/snippets/provider_list.html" with process="login" %}#}
+                    {#                            </ul>#}
+                    {##}
+                    {#                        </div>#}
+                    {#                        {% include "socialaccount/snippets/login_extra.html" %}#}
+
+                    {#                    {% endif %}#}
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

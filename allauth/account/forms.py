@@ -112,7 +112,8 @@ class LoginForm(forms.Form):
                 == AuthenticationMethod.USERNAME_EMAIL
             login_widget = forms.TextInput(attrs={'placeholder':
                                                   _('Username or e-mail'),
-                                                  'autofocus': 'autofocus'})
+                                                  'autofocus': 'autofocus',
+                                                  'class':'form-control'})
             login_field = forms.CharField(label=pgettext("field label",
                                                          "Login"),
                                           widget=login_widget)
